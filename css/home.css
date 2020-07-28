@@ -1,6 +1,7 @@
 body {
     margin: 0 0 0 0;
     transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
     background-color: var(--background-color);
 }
 
@@ -18,10 +19,12 @@ div#dark-mode-div {
     border-radius: 50%;
     cursor: pointer;
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
     perspective: 150px;
     -webkit-perspective: 150px;
     z-index: 50;
     transition: width 0.3s, height 0.3s, transform 0.3s;
+    -webkit-transition: width 0.3s, height 0.3s, -webkit-transform 0.3s;
 }
 
 label#dark-mode-label {
@@ -33,6 +36,7 @@ label#dark-mode-label {
     border-radius: 50%;
     z-index: 50;
     transition: border-radius 0.3s, transform 0.3s, background-color 0.5s;
+    -webkit-transition: border-radius 0.3s, -webkit-transform 0.3s, background-color 0.5s;
 }
 
 label#dark-mode-label::before {
@@ -45,6 +49,7 @@ label#dark-mode-label::before {
     border-radius: 50%;
     box-shadow: 0 0 10px 10px var(--shadow-color);
     transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s;
     opacity: 0;
 }
 
@@ -52,6 +57,7 @@ div#dark-mode-div:hover {
     width: 60px;
     height: 60px;
     transform: translate(-5px, 5px);
+    -webkit-transform: translate(-5px, 5px);
 }
 
 div#dark-mode-div:hover label#dark-mode-label::before {
@@ -60,6 +66,7 @@ div#dark-mode-div:hover label#dark-mode-label::before {
 
 .flip {
     transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
 }
 
 img#dark-mode-img {
@@ -67,6 +74,7 @@ img#dark-mode-img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     width: 40%;
     height: 40%;
     z-index: 50;
@@ -113,6 +121,7 @@ img#head-logo {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     width: 500px;
     max-width: 80%;
     height: auto;
@@ -124,11 +133,12 @@ img#head-arrow {
     bottom: 25px;
     left: 50%;
     transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
     width: 12px;
     height: auto;
 
     animation: head-arrow-animation 2s ease-in-out infinite;
-    /*-webkit-animation: head-arrow-animation 2s ease-in-out infinite;*/
+    -webkit-animation: head-arrow-animation 2s ease-in-out infinite;
 }
 
 @keyframes head-arrow-animation {
@@ -137,13 +147,13 @@ img#head-arrow {
     100% { transform: translate(-50%, 0px); }
 }
 
-/*@-webkit-keyframes head-arrow-animation {*/
-/*    0% { transform: translate(-50%, 0px); }*/
-/*    50% { transform: translate(-50%, 10px); }*/
-/*    100% { transform: translate(-50%, 0px); }*/
-/*}*/
+@-webkit-keyframes head-arrow-animation {
+    0% { -webkit-transform: translate(-50%, 0px); }
+    50% { -webkit-transform: translate(-50%, 10px); }
+    100% { -webkit-transform: translate(-50%, 0px); }
+}
 
 div#welcome {
     position: relative;
-    top: 2000px;
+    top: 20px;
 }
