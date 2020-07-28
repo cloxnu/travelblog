@@ -2,15 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link rel="shortcut icon" type="image/x-icon" href="res/home/favicon32.ico">
+    <link rel="icon" type="image/x-icon" href="res/home/favicon32.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="res/home/favicon72.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="res/home/favicon57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="res/home/favicon114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="res/home/favicon144.png">
+
     <title>Travel & Life</title>
 
     <script src="js/vue.js"></script>
+    <script src="js/darkmode.js"></script>
     <script src="js/read.js"></script>
     <script src="js/home.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/darkmode.css"/>
+    <link rel="stylesheet" type="text/css" href="css/button.css"/>
     <link rel="stylesheet" type="text/css" href="css/home.css"/>
 </head>
-<body>
+
+<body class>
+<script>document.body.classList += dark_mode_class_name;</script>
 
 <div id="bg-video">
     <video autoplay muted poster="res/home/head2.jpg" id="head1">
@@ -18,8 +31,22 @@
     </video>
 </div>
 <div id="bg-interact"></div>
+<div id="dark-mode-div">
+    <label id="dark-mode-label">
+        <input type="checkbox" id="dark-mode-input" onclick="dark_mode_clicked()">
+        <img id="dark-mode-img"/>
+        <script>
+            document.getElementById("dark-mode-input").checked = is_dark_mode;
+            document.getElementById("dark-mode-img").src = dark_mode_img_name;
+        </script>
+    </label>
+</div>
 <div id="head">
-    <img src="res/home/travelDogIconHome5.png" id="head-logo"/>
+    <img src="res/home/travelDogIconHome.png" id="head-logo"/>
+    <img src="res/home/downarrow.svg" id="head-arrow"/>
+</div>
+<div id="welcome">
+    <p>asdadada</p>
 </div>
 
 </body>

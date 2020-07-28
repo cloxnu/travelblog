@@ -1,0 +1,11 @@
+.dark-mode-off {
+    --background-color: #FFF;
+    --foreground-color: #000;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode-on {
+    --background-color: #202020;
+    --foreground-color: #FFF;
+    --shadow-color: rgba(255, 255, 255, 0.1);
+}

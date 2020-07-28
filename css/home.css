@@ -1,9 +1,83 @@
 body {
     margin: 0 0 0 0;
+    transition: background-color 0.5s;
+    background-color: var(--background-color);
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+div#dark-mode-div {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    perspective: 150px;
+    -webkit-perspective: 150px;
+    z-index: 50;
+    transition: width 0.3s, height 0.3s, transform 0.3s;
+}
+
+label#dark-mode-label {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: var(--background-color);
+    border-radius: 50%;
+    z-index: 50;
+    transition: border-radius 0.3s, transform 0.3s, background-color 0.5s;
+}
+
+label#dark-mode-label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 10px var(--shadow-color);
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+
+div#dark-mode-div:hover {
+    width: 60px;
+    height: 60px;
+    transform: translate(-5px, 5px);
+}
+
+div#dark-mode-div:hover label#dark-mode-label::before {
+    opacity: 1;
+}
+
+.flip {
+    transform: rotateX(180deg);
+}
+
+img#dark-mode-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 40%;
+    z-index: 50;
+}
+
+input#dark-mode-input {
+    display: none;
 }
 
 #bg-video, #bg-interact, #head {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100%;
     top: 0; left: 0;
@@ -19,11 +93,12 @@ body {
 }
 
 #head {
+    position: relative;
     z-index: 10;
 }
 
 video#head1 {
-    position: fixed;
+    position: absolute;
     object-fit: cover;
     object-position: center;
     width: 100%;
@@ -33,23 +108,42 @@ video#head1 {
 }
 
 img#head-logo {
-    position: fixed;
+    position: absolute;
     margin: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-img#head-logo {
-    width: 400px;
+    width: 500px;
     max-width: 80%;
     height: auto;
 }
 
-@media screen and (max-width: 600px) {
-    img#head-logo {
-        width: 600px;
-        max-width: 80%;
-        height: auto;
-    }
+img#head-arrow {
+    position: absolute;
+    margin: auto;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 12px;
+    height: auto;
+
+    animation: head-arrow-animation 2s ease-in-out infinite;
+    /*-webkit-animation: head-arrow-animation 2s ease-in-out infinite;*/
+}
+
+@keyframes head-arrow-animation {
+    0% { transform: translate(-50%, 0px); }
+    50% { transform: translate(-50%, 10px); }
+    100% { transform: translate(-50%, 0px); }
+}
+
+/*@-webkit-keyframes head-arrow-animation {*/
+/*    0% { transform: translate(-50%, 0px); }*/
+/*    50% { transform: translate(-50%, 10px); }*/
+/*    100% { transform: translate(-50%, 0px); }*/
+/*}*/
+
+div#welcome {
+    position: relative;
+    top: 2000px;
 }
