@@ -27,6 +27,9 @@ function application_to_html() {
     document.body.classList.add(is_dark_mode ? "dark-mode-on" : "dark-mode-off");
     document.getElementById("dark-mode-img").src = dark_mode_img_name;
     document.getElementById("dark-mode-input").checked = is_dark_mode;
-    document.getElementById("dark-mode-label").classList.toggle("flip");
-    // document.getElementById("dark-mode-label").style.transform = 'rotateX(180deg);';
+    if (is_dark_mode)
+        document.getElementById("dark-mode-label").classList.remove("flip");
+    else
+        document.getElementById("dark-mode-label").classList.add("flip");
+
 }
