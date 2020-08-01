@@ -69,7 +69,7 @@ div#dark-mode-div:hover label#dark-mode-label::before {
     -webkit-transform: rotateX(180deg);
 }
 
-img#dark-mode-img {
+.dark-mode-img {
     position: absolute;
     top: 50%;
     left: 50%;
