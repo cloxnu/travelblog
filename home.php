@@ -30,6 +30,7 @@
     <video autoplay muted poster="<?php echo $home["head_video2_poster"]?>" id="head1">
         <source src="<?php echo $home["head_video2"]?>" type="video/mp4">
     </video>
+    <script>document.getElementById("head1").play()</script>
 </div>
 <div id="bg-interact"></div>
 <div id="dark-mode-div">
