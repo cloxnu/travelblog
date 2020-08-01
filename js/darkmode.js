@@ -25,7 +25,6 @@ function application_to_html() {
     document.getElementById("dark-mode-input").checked = is_dark_mode;
     dark_mode_img_display();
     dark_mode_label_flip();
-
 }
 
 function dark_mode_label_flip() {

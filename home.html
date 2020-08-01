@@ -34,8 +34,8 @@
 <div id="dark-mode-div">
     <label id="dark-mode-label">
         <input type="checkbox" id="dark-mode-input" onclick="dark_mode_clicked()">
-        <img id="dark-mode-sun-img" class="dark-mode-img" src="res/home/sun.png"/>
-        <img id="dark-mode-moon-img" class="dark-mode-img" src="res/home/moon.png"/>
+        <img id="dark-mode-sun-img" class="dark-mode-img" src="res/home/sun.svg"/>
+        <img id="dark-mode-moon-img" class="dark-mode-img" src="res/home/moon.svg"/>
         <script>
             document.getElementById("dark-mode-input").checked = is_dark_mode;
             dark_mode_img_display();
@@ -44,8 +44,11 @@
     <script>dark_mode_label_flip()</script>
 </div>
 <div id="head">
-    <img src="res/home/travelDogIconHome.png" id="head-logo"/>
+    <div id="head-shelter"></div>
+    <img src="res/home/travelDogIconHome.png" class="head-logo" id="head-logo-black"/>
+    <img src="res/home/travelDogIconHome_white.png" class="head-logo" id="head-logo-white"/>
     <img src="res/home/downarrow.svg" id="head-arrow"/>
+    <script>head_logo_display()</script>
 </div>
 <div id="welcome">
     <p>asdadada</p>
