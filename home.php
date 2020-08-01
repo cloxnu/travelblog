@@ -20,22 +20,23 @@
     <link rel="stylesheet" type="text/css" href="css/darkmode.css"/>
     <link rel="stylesheet" type="text/css" href="css/button.css"/>
     <link rel="stylesheet" type="text/css" href="css/home.css"/>
+    <?php include "read/res.php"?>
 </head>
 
 <body class>
 <script>document.body.classList += dark_mode_class_name;</script>
 
 <div id="bg-video">
-    <video autoplay muted poster="res/home/head2.jpg" id="head1">
-        <source src="res/home/head2.mp4" type="video/mp4">
+    <video autoplay muted poster="<?php echo $home["head_video2_poster"]?>" id="head1">
+        <source src="<?php echo $home["head_video2"]?>" type="video/mp4">
     </video>
 </div>
 <div id="bg-interact"></div>
 <div id="dark-mode-div">
     <label id="dark-mode-label">
         <input type="checkbox" id="dark-mode-input" onclick="dark_mode_clicked()">
-        <img id="dark-mode-sun-img" class="dark-mode-img" src="res/home/sun.svg"/>
-        <img id="dark-mode-moon-img" class="dark-mode-img" src="res/home/moon.svg"/>
+        <img id="dark-mode-sun-img" class="dark-mode-img" src="<?php echo $home["sun"]?>"/>
+        <img id="dark-mode-moon-img" class="dark-mode-img" src="<?php echo $home["moon"]?>"/>
         <script>
             document.getElementById("dark-mode-input").checked = is_dark_mode;
             dark_mode_img_display();
@@ -45,9 +46,9 @@
 </div>
 <div id="head">
     <div id="head-shelter"></div>
-    <img src="res/home/travelDogIconHome.png" class="head-logo" id="head-logo-black"/>
-    <img src="res/home/travelDogIconHome_white.png" class="head-logo" id="head-logo-white"/>
-    <img src="res/home/downarrow.svg" id="head-arrow"/>
+    <img src="<?php echo $home["travelDogIconHome"]?>" class="head-logo" id="head-logo-black"/>
+    <img src="<?php echo $home["travelDogIconHome_white"]?>" class="head-logo" id="head-logo-white"/>
+    <img src="<?php echo $home["downarrow"]?>" id="head-arrow"/>
     <script>head_logo_display()</script>
 </div>
 <div id="welcome">
