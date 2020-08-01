@@ -147,7 +147,7 @@ video#head1 {
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
-    width: 300px;
+    width: 500px;
     max-width: 80%;
     height: auto;
     transition: opacity 0.3s;
