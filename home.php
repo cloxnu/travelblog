@@ -27,7 +27,7 @@
 <script>document.body.classList += dark_mode_class_name;</script>
 
 <div id="bg-video">
-    <video autoplay muted poster="<?php echo $home["head_video2_poster"]?>" id="head1">
+    <video autoplay muted playsinline poster="<?php echo $home["head_video2_poster"]?>" id="head1">
         <source src="<?php echo $home["head_video2"]?>" type="video/mp4">
     </video>
     <script>document.getElementById("head1").play()</script>
