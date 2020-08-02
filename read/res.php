@@ -1,6 +1,7 @@
 <?php
 
-$prefix = 'https://cdn.jsdelivr.net/gh/cloxnu/an.dog@1.0.0/';
+//$prefix = 'https://cdn.jsdelivr.net/gh/cloxnu/an.dog@1.0.0/';
+$prefix = '';
 
 // home
 
@@ -12,5 +13,9 @@ $home = array(
     "moon" => $prefix . "res/home/moon.svg",
     "head_video2" => $prefix . "res/home/head2.mp4",
     "head_video2_poster" => $prefix . "res/home/head2.jpg"
+);
+
+$font = array(
+    "FZYanSJW" => $prefix . "res/font/FZYanSJW.TTF"
 );
 

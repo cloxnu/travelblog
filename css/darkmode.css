@@ -3,6 +3,11 @@
     --foreground-color: #000;
     --shadow-color: rgba(0, 0, 0, 0.05);
     --dark-mode-btn-bgcolor: rgb(240, 240, 240);
+    --black-foreground-opacity: 1;
+    --white-foreground-opacity: 0;
+    --black-shelter-opacity: 0;
+    --white-shelter-opacity: 0.3;
+    --dark-mode-icon-flip: 180deg;
 }
 
 .dark-mode-on {
@@ -10,4 +15,25 @@
     --foreground-color: #FFF;
     --shadow-color: rgba(255, 255, 255, 0.05);
     --dark-mode-btn-bgcolor: rgb(50, 50, 50);
+    --black-foreground-opacity: 0;
+    --white-foreground-opacity: 1;
+    --black-shelter-opacity: 0.3;
+    --white-shelter-opacity: 0;
+    --dark-mode-icon-flip: 0deg;
+}
+
+.black-foreground {
+    opacity: var(--black-foreground-opacity);
+}
+
+.white-foreground {
+    opacity: var(--white-foreground-opacity);
+}
+
+.black-shelter {
+    opacity: var(--black-shelter-opacity);
+}
+
+.white-shelter {
+    opacity: var(--white-shelter-opacity);
 }

@@ -20,40 +20,37 @@
     <link rel="stylesheet" type="text/css" href="css/darkmode.css"/>
     <link rel="stylesheet" type="text/css" href="css/button.css"/>
     <link rel="stylesheet" type="text/css" href="css/home.css"/>
-    <?php include "read/res.php"?>
+    <?php include "read/res.php";?>
+    <style><?php include "css/font.css.php"?></style>
 </head>
 
 <body class>
 <script>document.body.classList += dark_mode_class_name;</script>
 
-<div id="bg-video">
-    <video autoplay muted playsinline poster="<?php echo $home["head_video2_poster"]?>" id="head1">
-        <source src="<?php echo $home["head_video2"]?>" type="video/mp4">
-    </video>
-    <script>document.getElementById("head1").play()</script>
-</div>
-<div id="bg-interact"></div>
 <div id="dark-mode-div">
     <label id="dark-mode-label">
         <input type="checkbox" id="dark-mode-input" onclick="dark_mode_clicked()">
-        <img id="dark-mode-sun-img" class="dark-mode-img" src="<?php echo $home["sun"]?>"/>
-        <img id="dark-mode-moon-img" class="dark-mode-img" src="<?php echo $home["moon"]?>"/>
-        <script>
-            document.getElementById("dark-mode-input").checked = is_dark_mode;
-            dark_mode_img_display();
-        </script>
+        <img id="dark-mode-sun-img" class="dark-mode-img black-foreground" src="<?php echo $home["sun"]?>"/>
+        <img id="dark-mode-moon-img" class="dark-mode-img white-foreground" src="<?php echo $home["moon"]?>"/>
     </label>
-    <script>dark_mode_label_flip()</script>
 </div>
 <div id="head">
-    <div id="head-shelter"></div>
-    <img src="<?php echo $home["travelDogIconHome"]?>" class="head-logo" id="head-logo-black"/>
-    <img src="<?php echo $home["travelDogIconHome_white"]?>" class="head-logo" id="head-logo-white"/>
+    <div id="bg-video">
+        <video autoplay muted playsinline poster="<?php echo $home["head_video2_poster"]?>" id="head1">
+            <source src="<?php echo $home["head_video2"]?>" type="video/mp4">
+        </video>
+    </div>
+    <div id="bg-interact"></div>
+    <div id="head-shelter" class="black-shelter"></div>
+    <img src="<?php echo $home["travelDogIconHome"]?>" class="head-logo black-foreground"/>
+    <img src="<?php echo $home["travelDogIconHome_white"]?>" class="head-logo white-foreground"/>
     <img src="<?php echo $home["downarrow"]?>" id="head-arrow"/>
-    <script>head_logo_display()</script>
 </div>
 <div id="welcome">
-    <p>asdadada</p>
+    <p id="welcome-p">
+        欢迎，<br/>
+        等
+    </p>
 </div>
 
 </body>

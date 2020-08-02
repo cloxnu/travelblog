@@ -6,11 +6,6 @@ body {
     background-color: var(--background-color);
 }
 
-html, body {
-    width: 100%;
-    height: 100%;
-}
-
 div#dark-mode-div {
     position: fixed;
     top: 20px;
@@ -35,6 +30,7 @@ label#dark-mode-label {
     height: 100%;
     cursor: pointer;
     background-color: var(--background-color);
+    transform: rotateX(var(--dark-mode-icon-flip));
     border-radius: 50%;
     z-index: 50;
     transition: border-radius 0.3s, transform 0.3s, background-color 0.5s;
@@ -62,6 +58,8 @@ label#dark-mode-label::after {
     left: 0;
     width: 100%;
     height: 100%;
+    user-select: none;
+    -webkit-user-select: none;
     z-index: 51;
 }
 
@@ -74,11 +72,6 @@ div#dark-mode-div:hover {
 
 div#dark-mode-div:hover label#dark-mode-label {
     background-color: var(--dark-mode-btn-bgcolor);
-}
-
-.flip {
-    transform: rotateX(180deg);
-    -webkit-transform: rotateX(180deg);
 }
 
 .dark-mode-img {
@@ -101,7 +94,7 @@ input#dark-mode-input {
 #bg-video, #bg-interact, #head {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     top: 0; left: 0;
 }
 
@@ -124,7 +117,6 @@ input#dark-mode-input {
     width: 100%;
     height: 100%;
     background-color: black;
-    opacity: 0;
     transition: opacity 0.3s;
     -webkit-transition: opacity 0.3s;
     z-index: 6;
@@ -150,6 +142,9 @@ video#head1 {
     width: 500px;
     max-width: 80%;
     height: auto;
+    max-height: 60%;
+    object-fit: contain;
+    object-position: center;
     transition: opacity 0.3s;
     -webkit-transition: opacity 0.3s;
     z-index: 7;
@@ -183,5 +178,21 @@ img#head-arrow {
 
 div#welcome {
     position: relative;
-    top: 2000px;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+}
+
+p#welcome-p {
+    position: absolute;
+    font: 1.2em FZYanS;
+    line-height: 150%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--foreground-color);
+    z-index: 11;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
 }
