@@ -57,7 +57,7 @@
         和对灵感的敬畏，<br/>
         记录着，<br/>
         这个奇妙的世界。<br/><br/>
-        探索中...
+        探索中...<br/><br/><br/><br/>
     </p>
     <a id="about-me-a" href="https://github.com/cloxnu">
         <p>ABOUT ME</p>
