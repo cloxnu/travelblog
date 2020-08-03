@@ -6,3 +6,20 @@
     font-family: FZYanS;
     src: url(<?php echo $font["FZYanSJW"]?>);
 }
+
+@font-face {
+    font-family: Kano;
+    src: url(<?php echo $font["Kano"]?>);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(<?php echo $font["Poppins-Regular"]?>);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(<?php echo $font["Poppins-SemiBold"]?>);
+    font-weight: bold;
+}

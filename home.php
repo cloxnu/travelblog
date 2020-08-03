@@ -48,9 +48,20 @@
 </div>
 <div id="welcome">
     <p id="welcome-p">
-        欢迎，<br/>
-        等
+        你好，<br/>
+        窗外的大自然。<br/>
+        我满怀热爱，<br/>
+        期待在你的怀抱里，<br/>
+        邂逅美好且浪漫的故事。<br/>
+        这里始终秉承着对艺术的执念，<br/>
+        和对灵感的敬畏，<br/>
+        记录着，<br/>
+        这个奇妙的世界。<br/><br/>
+        探索中...
     </p>
+    <a id="about-me-a" href="https://github.com/cloxnu">
+        <p>ABOUT ME</p>
+    </a>
 </div>
 
 </body>

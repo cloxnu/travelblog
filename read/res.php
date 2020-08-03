@@ -16,6 +16,9 @@ $home = array(
 );
 
 $font = array(
-    "FZYanSJW" => $prefix . "res/font/FZYanSJW.TTF"
+    "FZYanSJW" => $prefix . "res/font/FZYanSJW.TTF",
+    "Kano" => $prefix . "res/font/Kano.otf",
+    "Poppins-Regular" => $prefix . "res/font/Poppins-Regular.ttf",
+    "Poppins-SemiBold" => $prefix . "res/font/Poppins-SemiBold.ttf"
 );
 

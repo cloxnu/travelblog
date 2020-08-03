@@ -187,7 +187,7 @@ p#welcome-p {
     position: absolute;
     font: 1.2em FZYanS;
     line-height: 150%;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -195,4 +195,33 @@ p#welcome-p {
     z-index: 11;
     transition: color 0.5s;
     -webkit-transition: color 0.5s;
+}
+
+a#about-me-a {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-decoration: none;
+    color: var(--foreground-color);
+    width: 100px;
+    height: 36px;
+    border-radius: 20px;
+    border: solid 2px var(--foreground-color);
+    display: flex;
+    text-align: center;
+    transition: color 0.5s, background-color 0.5s, border-color 0.5s;
+    -webkit-transition: color 0.5s, background-color 0.5s, border-color 0.5s;
+}
+
+a#about-me-a:hover {
+    background-color: var(--foreground-color);
+    color: var(--background-color);
+}
+
+a#about-me-a p {
+    margin: auto;
+    font: bold 12px Poppins;
+    user-select: none;
+    -webkit-user-select: none;
 }
