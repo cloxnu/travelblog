@@ -195,6 +195,18 @@ p#welcome-p {
     -webkit-transition: color 0.5s;
 }
 
+@media screen and (max-height: 500px) {
+    p#welcome-p {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-height: 300px) {
+    p#welcome-p {
+        font-size: 0.4em;
+    }
+}
+
 a#about-me-a {
     position: absolute;
     bottom: 10%;
@@ -208,6 +220,7 @@ a#about-me-a {
     border: solid 2px var(--foreground-color);
     display: flex;
     text-align: center;
+    z-index: 12;
     transition: color 0.5s, background-color 0.5s, border-color 0.5s;
     -webkit-transition: color 0.5s, background-color 0.5s, border-color 0.5s;
 }
