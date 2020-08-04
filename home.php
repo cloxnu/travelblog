@@ -36,7 +36,7 @@
 </div>
 <div id="head">
     <div id="bg-video">
-        <video autoplay muted playsinline poster="<?php echo $home["head_video2_poster"]?>" id="head1">
+        <video autoplay muted playsinline loop poster="<?php echo $home["head_video2_poster"]?>" id="head1">
             <source src="<?php echo $home["head_video2"]?>" type="video/mp4">
         </video>
     </div>
