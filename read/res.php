@@ -1,6 +1,6 @@
 <?php
 
-$prefix = 'https://cdn.jsdelivr.net/gh/cloxnu/an.dog@v1.0.2/';
+$prefix = 'https://cdn.jsdelivr.net/gh/cloxnu/an.dog@v1.0.3/';
 //$prefix = '';
 
 // home
