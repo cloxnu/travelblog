@@ -9,6 +9,11 @@ window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
     application_to_html();
 });
 
+function dark_mode_clicked() {
+    change_dark_mode(!is_dark_mode);
+    application_to_html();
+}
+
 function change_dark_mode(isDarkMode) {
     is_dark_mode = isDarkMode;
     if (isDarkMode) {
@@ -22,5 +27,4 @@ function change_dark_mode(isDarkMode) {
 function application_to_html() {
     document.body.classList.remove(is_dark_mode ? "dark-mode-off" : "dark-mode-on");
     document.body.classList.add(is_dark_mode ? "dark-mode-on" : "dark-mode-off");
-    dark_mode_changed();
 }

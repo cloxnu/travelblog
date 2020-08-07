@@ -1,7 +1,7 @@
 <?php
 
-$prefix = 'https://cdn.jsdelivr.net/gh/cloxnu/an.dog@v1.0.3/';
-//$prefix = '';
+//$prefix = 'https://cdn.jsdelivr.net/gh/cloxnu/an.dog@v1.0.3/';
+$prefix = '';
 
 // home
 
@@ -19,6 +19,7 @@ $font = array(
     "FZYanSJW" => $prefix . "res/font/FZYanSJW.TTF",
     "Kano" => $prefix . "res/font/Kano.otf",
     "Poppins-Regular" => $prefix . "res/font/Poppins-Regular.ttf",
-    "Poppins-SemiBold" => $prefix . "res/font/Poppins-SemiBold.ttf"
+    "Poppins-SemiBold" => $prefix . "res/font/Poppins-SemiBold.ttf",
+    "FiraMono-Medium" => $prefix . "res/font/FiraMono-Medium.ttf"
 );
 

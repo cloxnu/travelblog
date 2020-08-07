@@ -6,91 +6,6 @@ body {
     background-color: var(--background-color);
 }
 
-div#dark-mode-div {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    perspective: 150px;
-    -webkit-perspective: 150px;
-    overflow: hidden;
-    z-index: 50;
-    transition: width 0.3s, height 0.3s, transform 0.3s;
-    -webkit-transition: width 0.3s, height 0.3s, -webkit-transform 0.3s;
-}
-
-label#dark-mode-label {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    background-color: var(--background-color);
-    transform: rotateX(var(--dark-mode-icon-flip));
-    border-radius: 50%;
-    z-index: 50;
-    transition: border-radius 0.3s, transform 0.3s, background-color 0.5s;
-    -webkit-transition: border-radius 0.3s, -webkit-transform 0.3s, background-color 0.5s;
-}
-
-label#dark-mode-label::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    z-index: 50;
-    transition: opacity 0.3s;
-    -webkit-transition: opacity 0.3s;
-    opacity: 0;
-}
-
-label#dark-mode-label::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    user-select: none;
-    -webkit-user-select: none;
-    z-index: 51;
-}
-
-div#dark-mode-div:hover {
-    width: 60px;
-    height: 60px;
-    transform: translate(-5px, 5px);
-    -webkit-transform: translate(-5px, 5px);
-}
-
-div#dark-mode-div:hover label#dark-mode-label {
-    background-color: var(--dark-mode-btn-bgcolor);
-}
-
-.dark-mode-img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    width: 40%;
-    height: 40%;
-    z-index: 50;
-    transition: opacity 0.3s;
-    -webkit-transition: opacity 0.3s;
-}
-
-input#dark-mode-input {
-    display: none;
-}
-
 #bg-video, #bg-interact, #head {
     position: absolute;
     width: 100%;
@@ -180,7 +95,7 @@ div#welcome {
     position: relative;
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: 170vh;
     z-index: 10;
 }
 
@@ -209,9 +124,9 @@ p#welcome-p {
 
 a#about-me-a {
     position: absolute;
-    bottom: 10%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 50%);
     text-decoration: none;
     color: var(--foreground-color);
     width: 100px;
@@ -225,9 +140,28 @@ a#about-me-a {
     -webkit-transition: color 0.5s, background-color 0.5s, border-color 0.5s;
 }
 
+a#about-me-a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px var(--foreground-color);
+    z-index: 11;
+    opacity: 0;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+}
+
 a#about-me-a:hover {
     background-color: var(--foreground-color);
     color: var(--background-color);
+}
+
+a#about-me-a:hover::before {
+    opacity: 0.4;
 }
 
 a#about-me-a p {

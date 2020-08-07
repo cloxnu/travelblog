@@ -23,3 +23,9 @@
     src: url(<?php echo $font["Poppins-SemiBold"]?>);
     font-weight: bold;
 }
+
+@font-face {
+    font-family: "Fira Mono";
+    src: url(<?php echo $font["FiraMono-Medium"]?>);
+    font-weight: normal;
+}
