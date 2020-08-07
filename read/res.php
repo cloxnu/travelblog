@@ -1,7 +1,7 @@
 <?php
 
-//$prefix = 'https://cdn.jsdelivr.net/gh/cloxnu/an.dog@v1.0.3/';
-$prefix = '';
+$prefix = 'https://cdn.jsdelivr.net/gh/cloxnu/an.dog@v1.0.4/';
+//$prefix = '';
 
 // home
 
