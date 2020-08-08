@@ -47,19 +47,21 @@
     <img src="<?php echo $home["downarrow"]?>" id="head-arrow"/>
 </div>
 <div id="welcome">
-    <p id="welcome-p">
+    <p class="welcome-p" id="welcome-p1">
         我旅行的时间很长，<br/>
         旅途也是很长的。<br/>
         天刚破晓，<br/>
         我就驱车起行，<br/>
         穿遍广漠的世界，<br/>
         在许多星球之上，<br/>
-        留下辙痕。<br/><br/>
+        留下辙痕。
+    </p>
+    <p class="welcome-p" id="welcome-p2">
         这里始终秉承着对艺术的执念，<br/>
         和对灵感的敬畏，<br/>
         记录着，<br/>
         眼前奇妙的世界。<br/><br/>
-        探索中...<br/><br/><br/><br/>
+        探索中...
     </p>
     <a id="about-me-a" href="https://github.com/cloxnu">
         <p>ABOUT ME</p>
