@@ -1,7 +1,7 @@
 <?php
     if (empty($_GET["art"])) {
-        require_once('home.php');
+        include_once('home.php');
     }
     else {
-        require_once('art.html');
+        include_once('art.html');
     }

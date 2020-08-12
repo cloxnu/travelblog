@@ -1,10 +1,6 @@
 let info;
 let all_blog_json;
 
-window.onload = function () {
-    document.body.classList.remove("loading");
-}
-
 readinfo("",function (json) {
     info = json;
 })
