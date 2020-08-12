@@ -9,6 +9,7 @@ $home = array(
     "travelDogIconHome" => $prefix . "res/home/travelDogIconHome.png",
     "travelDogIconHome_white" => $prefix . "res/home/travelDogIconHome_white.png",
     "downarrow" => $prefix . "res/home/downarrow.svg",
+    "dog" => $prefix . "res/home/dog.svg",
     "sun" => $prefix . "res/home/sun.svg",
     "moon" => $prefix . "res/home/moon.svg",
     "head_video2" => $prefix . "res/home/head3.mp4",

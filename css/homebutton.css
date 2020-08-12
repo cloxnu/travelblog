@@ -1,7 +1,3 @@
-.dog-svg path {
-    fill: var(--background-color);
-}
-
 div#home-button-div {
     position: fixed;
     top: 20px;

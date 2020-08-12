@@ -13,27 +13,25 @@
 
     <title>Travel & Life</title>
 
-    <?php include "read/res.php";?>
-    <style><?php include "css/font.css.php"?></style>
+    <?php require_once "read/res.php";?>
+    <style><?php require_once "css/font.css.php"?></style>
     <script src="js/vue.js"></script>
     <script src="js/darkmode.js"></script>
     <script src="js/read.js"></script>
     <script src="js/home.js"></script>
     <link rel="stylesheet" type="text/css" href="css/darkmode.css"/>
+    <link rel="stylesheet" type="text/css" href="css/loading.css"/>
     <link rel="stylesheet" type="text/css" href="css/button.css"/>
     <link rel="stylesheet" type="text/css" href="css/home.css"/>
+    <link rel="stylesheet" type="text/css" href="css/cover.css"/>
 </head>
 
-<body class>
-<script>document.body.classList += dark_mode_class_name;</script>
+<body class="loading">
+<script>document.body.classList.add(dark_mode_class_name);</script>
 
-<div id="dark-mode-div">
-    <label id="dark-mode-label">
-        <input type="checkbox" id="dark-mode-input" onclick="dark_mode_clicked()">
-        <img id="dark-mode-sun-img" class="dark-mode-img black-foreground" src="<?php echo $home["sun"]?>"/>
-        <img id="dark-mode-moon-img" class="dark-mode-img white-foreground" src="<?php echo $home["moon"]?>"/>
-    </label>
-</div>
+<?php include_once "template/darkmodeButton.php"?>
+<?php include_once "template/loading.php"?>
+
 <div id="head">
     <div id="bg-video">
         <video autoplay muted playsinline loop poster="<?php echo $home["head_video2_poster"]?>" id="head1">
@@ -47,7 +45,7 @@
     <img src="<?php echo $home["downarrow"]?>" id="head-arrow"/>
 </div>
 <div id="welcome">
-    <div id="welcome-p1-wrap">
+    <div id="welcome-p1-wrapper">
         <p class="welcome-p" id="welcome-p1">
             我旅行的时间很长，<br/>
             旅途也是很长的。<br/>
@@ -58,7 +56,7 @@
             留下辙痕。
         </p>
     </div>
-    <div id="welcome-p2-wrap">
+    <div id="welcome-p2-wrapper">
         <p class="welcome-p" id="welcome-p2">
             这里始终秉承着对艺术的执念，<br/>
             和对灵感的敬畏，<br/>
@@ -68,10 +66,18 @@
         </p>
     </div>
 
-    <a id="about-me-a" href="https://github.com/cloxnu">
-        <p>ABOUT ME</p>
+    <a id="about-me-a" class="button-link" href="https://github.com/cloxnu">
+        <p class="western">ABOUT ME</p>
     </a>
+</div>
+<div id="top-div" class="cover-style-1" style="display: none">
+    <img src="" id="top-cover" class="cover-image"/>
+    <p id="top-class" class="cover-class"></p>
+    <p id="top-title" class="cover-title"></p>
+    <p id="top-desc" class="cover-desc"></p>
 </div>
 
 </body>
+
+<script src="js/home_foot.js"></script>
 </html>

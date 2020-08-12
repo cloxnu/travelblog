@@ -1,4 +1,13 @@
+let info;
 let all_blog_json;
+
+window.onload = function () {
+    document.body.classList.remove("loading");
+}
+
+readinfo("",function (json) {
+    info = json;
+})
 
 readall(function (json) {
     all_blog_json = json;
@@ -11,7 +20,7 @@ window.addEventListener('scroll', function (e) {
 
     // 为了避免 opacity 的快速变化导致动画失效，
     // 将此 opacity 分为外层 welcome-p1-wrap 的动画 opacity 和 welcome-p1 的非动画 opacity
-    document.getElementById("welcome-p1-wrap").style.opacity =
+    document.getElementById("welcome-p1-wrapper").style.opacity =
         (welcome_offset_ratio < 0.3 ? '1' : '0.3'); // 1 --- 0.3
     document.getElementById("welcome-p1").style.opacity =
         (welcome_offset_ratio < 0.3 ? '1' :
@@ -23,7 +32,7 @@ window.addEventListener('scroll', function (e) {
             (welcome_offset_ratio > 0.6 ? '57' : (
                 (-10 * welcome_offset_ratio + 63).toString()
             ))) + '%'; // 73 ---> 57
-    document.getElementById("welcome-p2-wrap").style.opacity =
+    document.getElementById("welcome-p2-wrapper").style.opacity =
         (welcome_offset_ratio < 0.3 ? '0.3' : '1'); // 0.3 --- 1
     document.getElementById("welcome-p2").style.opacity =
         (welcome_offset_ratio < 0 ? '0' :
