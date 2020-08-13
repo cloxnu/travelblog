@@ -1,5 +1,7 @@
 <span id="loading-shelter"></span>
 <div id="loading-div">
     <img src="<?php echo $home["dog"]?>" id="loading-img"/>
-    <span id="loader"></span>
+    <span id="loader">
+        <span id="loader-inner"></span>
+    </span>
 </div>
