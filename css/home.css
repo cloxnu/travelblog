@@ -101,13 +101,12 @@ div#welcome {
 
 .welcome-p {
     position: absolute;
-    font: 1.2em FZYanS;
+    font: normal 1.2em FZYanS;
     line-height: 150%;
     margin: auto;
     text-align: center;
-    left: 50%;
-    transform: translate(-50%, 0);
-    -webkit-transform: translate(-50%, 0);
+    left: 0;
+    right: 0;
     color: var(--foreground-color);
     z-index: 11;
     transition: color 0.5s;
@@ -205,5 +204,26 @@ a#about-me-a::before {
 
 div#top-div {
     position: relative;
+    overflow: hidden;
     z-index: 10;
+}
+
+.cover-image {
+    z-index: 10;
+}
+
+.cover-shelter {
+    z-index: 11;
+}
+
+.cover-title {
+    z-index: 12;
+}
+
+.cover-class {
+    z-index: 12;
+}
+
+.cover-desc {
+    z-index: 12;
 }

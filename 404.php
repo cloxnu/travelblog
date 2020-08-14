@@ -26,6 +26,7 @@
 
 <?php include_once "template/homeButton.php"?>
 <?php include_once "template/darkmodeButton.php"?>
+
 <div id="errordiv">
     <p id="errortext">
         404

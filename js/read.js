@@ -1,6 +1,6 @@
 function readall(successCallback) {
     const xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET", "read", true);
+    xmlhttp.open("GET", "read/", true);
     xmlhttp.send();
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {

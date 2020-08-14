@@ -15,6 +15,7 @@
 
     <?php require_once "read/res.php";?>
     <style><?php require_once "css/font.css.php"?></style>
+    <script src="read/res.js"></script>
     <script src="js/vue.js"></script>
     <script src="js/darkmode.js"></script>
     <script src="js/loading.js"></script>
@@ -35,15 +36,15 @@
 
 <div id="head">
     <div id="bg-video">
-        <video autoplay muted playsinline loop poster="<?php echo $home["head_video2_poster"]?>" id="head1">
-            <source src="<?php echo $home["head_video2"]?>" type="video/mp4">
+        <video autoplay muted playsinline loop poster="<?php home("head_video2_poster")?>" id="head1">
+            <source src="<?php home("head_video2")?>" type="video/mp4">
         </video>
     </div>
     <div id="bg-interact"></div>
     <div id="head-shelter" class="black-shelter"></div>
-    <img src="<?php echo $home["travelDogIconHome"]?>" class="head-logo black-foreground"/>
-    <img src="<?php echo $home["travelDogIconHome_white"]?>" class="head-logo white-foreground"/>
-    <img src="<?php echo $home["downarrow"]?>" id="head-arrow"/>
+    <img src="<?php home("travelDogIconHome")?>" class="head-logo black-foreground"/>
+    <img src="<?php home("travelDogIconHome_white")?>" class="head-logo white-foreground"/>
+    <img src="<?php home("downarrow")?>" id="head-arrow"/>
 </div>
 <div id="welcome">
     <div id="welcome-p1-wrapper">
@@ -73,6 +74,7 @@
 </div>
 <div id="top-div" class="cover-style-1" style="display: none">
     <img src="" id="top-cover" class="cover-image"/>
+    <span id="top-shelter" class="cover-shelter"></span>
     <p id="top-class" class="cover-class"></p>
     <p id="top-title" class="cover-title"></p>
     <p id="top-desc" class="cover-desc"></p>

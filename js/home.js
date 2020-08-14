@@ -1,14 +1,3 @@
-let info;
-let all_blog_json;
-
-readinfo("",function (json) {
-    info = json;
-})
-
-readall(function (json) {
-    all_blog_json = json;
-})
-
 window.addEventListener('scroll', function (e) {
     const screen_height = document.documentElement.clientHeight;
     const welcome_offset = -document.getElementById("welcome").getBoundingClientRect().top;

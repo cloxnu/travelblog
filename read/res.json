@@ -1,0 +1,23 @@
+{
+    "prefix": "https://cdn.jsdelivr.net/gh/cloxnu/an.dog@v1.0.5/",
+    "prefix1": "",
+    "home": {
+        "travelDogIconHome": "res/home/travelDogIconHome.png",
+        "travelDogIconHome_white": "res/home/travelDogIconHome_white.png",
+        "downarrow": "res/home/downarrow.svg",
+        "dog": "res/home/dog.svg",
+        "sun": "res/home/sun.svg",
+        "moon": "res/home/moon.svg",
+        "head_video2": "res/home/head3.mp4",
+        "head_video2_poster": "res/home/head3.jpg"
+    },
+    "font": {
+        "FZYanSJW": "res/font/FZYanSJW.TTF",
+        "FZYanSJW_Cu": "res/font/FZYanSJW_Cu.TTF",
+        "Kano": "res/font/Kano.otf",
+        "Poppins-Regular": "res/font/Poppins-Regular.ttf",
+        "Poppins-SemiBold": "res/font/Poppins-SemiBold.ttf",
+        "FiraMono-Medium": "res/font/FiraMono-Medium.ttf"
+    },
+    "content": "content/"
+}
