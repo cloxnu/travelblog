@@ -83,14 +83,26 @@ label#dark-mode-label::after {
     z-index: 51;
 }
 
-div#dark-mode-div:hover {
+@media (hover: hover) and (pointer: fine) {
+    div#dark-mode-div:hover {
+        width: 60px;
+        height: 60px;
+        transform: translate(-5px, 5px);
+        -webkit-transform: translate(-5px, 5px);
+    }
+    div#dark-mode-div:hover label#dark-mode-label {
+        background-color: var(--dark-mode-btn-bgcolor);
+    }
+}
+
+div#dark-mode-div.on-touch {
     width: 60px;
     height: 60px;
     transform: translate(-5px, 5px);
     -webkit-transform: translate(-5px, 5px);
 }
 
-div#dark-mode-div:hover label#dark-mode-label {
+div#dark-mode-div.on-touch label#dark-mode-label {
     background-color: var(--dark-mode-btn-bgcolor);
 }
 

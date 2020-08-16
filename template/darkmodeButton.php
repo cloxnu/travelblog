@@ -1,4 +1,4 @@
-<div id="dark-mode-div">
+<div id="dark-mode-div" class="touch">
     <label id="dark-mode-label">
         <input type="checkbox" id="dark-mode-input" onclick="dark_mode_clicked()">
         <img id="dark-mode-sun-img" class="dark-mode-img black-foreground" src="<?php home("sun")?>"/>

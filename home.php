@@ -28,7 +28,7 @@
     <link rel="stylesheet" type="text/css" href="css/cover.css"/>
 </head>
 
-<body class="loading">
+<body class="loading touch">
 <script>document.body.classList.add(dark_mode_class_name);</script>
 
 <?php include_once "template/darkmodeButton.php"?>
@@ -68,7 +68,7 @@
         </p>
     </div>
 
-    <a id="about-me-a" class="button-link" href="https://github.com/cloxnu">
+    <a id="about-me-a" class="button-link touch" href="https://github.com/cloxnu">
         <p class="western">ABOUT ME</p>
     </a>
 </div>
@@ -76,6 +76,7 @@
     <img src="" id="top-cover" class="cover-image"/>
     <span id="top-shelter" class="cover-shelter"></span>
     <p id="top-class" class="cover-class"></p>
+    <p id="top-date" class="cover-date"></p>
     <p id="top-title" class="cover-title"></p>
     <p id="top-desc" class="cover-desc"></p>
 </div>
@@ -83,4 +84,5 @@
 </body>
 
 <script src="js/home_foot.js"></script>
+<script src="js/touch.js"></script>
 </html>

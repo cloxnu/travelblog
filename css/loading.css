@@ -17,8 +17,7 @@ div#loading-div {
     top: 0vh;
 }
 
-span#loading-shelter {
-    content: "";
+span#loading-shadow {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -27,18 +26,33 @@ span#loading-shelter {
     pointer-events: none;
     background-color: black;
     opacity: 0;
-    z-index: 44;
+    z-index: 43;
     transition: opacity 1s;
     -webkit-transition: opacity 1s;
 }
 
-.loading span#loading-shelter {
+.loading span#loading-shadow {
     opacity: 0.8;
 }
 
 .loading {
     overflow-x: hidden;
     overflow-y: hidden;
+}
+
+span#loading-shelter {
+    display: none;
+}
+
+.loading span#loading-shelter {
+    display: block;
+    position: fixed;
+    width: 200vw;
+    height: 200vh;
+    top: -50vh;
+    left: -50vw;
+    background-color: var(--background-color);
+    z-index: 44;
 }
 
 img#loading-img {
