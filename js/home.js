@@ -17,6 +17,46 @@ window.addEventListener('scroll', function (e) {
             (welcome_offset_ratio > 0.6 ? '57' : (
                 (-10 * welcome_offset_ratio + 63).toString()
             ))) + '%'; // 73 ---> 57
+    document.getElementById("welcome-planet1-div").style.opacity =
+        (welcome_offset_ratio < 0.3 ? '1' :
+            (welcome_offset_ratio > 0.6 ? '0' : (
+                (-(10 / 3) * welcome_offset_ratio + 2).toString()
+            ))); // 1 ---> 0
+    document.getElementById("welcome-planet2-div").style.opacity =
+        (welcome_offset_ratio < 0 ? '0' :
+            (welcome_offset_ratio > 0.3 ? '1' : (
+                ((10 / 3) * welcome_offset_ratio).toString()
+            ))); // 0 ---> 1
+    document.getElementById("welcome-planet1-div").style.bottom =
+        (welcome_offset_ratio < -1 ? '47' :
+            (welcome_offset_ratio > 0.6 ? '63' : (
+                (10 * welcome_offset_ratio + 57).toString()
+            ))) + '%'; // 57 ---> 73
+    document.getElementById("welcome-planet2-div").style.top =
+        (welcome_offset_ratio < -1 ? '98' :
+            (welcome_offset_ratio > 0.6 ? '82' : (
+                (-10 * welcome_offset_ratio + 88).toString()
+            ))) + '%'; // 57 ---> 73
+    // document.getElementById("welcome-planet1-shadow").style.opacity =
+    //     (welcome_offset_ratio < 0.3 ? '1' :
+    //         (welcome_offset_ratio > 0.6 ? '0' : (
+    //             (-(10 / 3) * welcome_offset_ratio + 2).toString()
+    //         ))); // 1 ---> 0
+    // document.getElementById("welcome-planet2-shadow").style.opacity =
+    //     (welcome_offset_ratio < 0.3 ? '1' :
+    //         (welcome_offset_ratio > 0.6 ? '0' : (
+    //             (-(10 / 3) * welcome_offset_ratio + 2).toString()
+    //         ))); // 1 ---> 0
+    // document.getElementById("welcome-planet1-shadow").style.bottom =
+    //     (welcome_offset_ratio < -1 ? '47' :
+    //         (welcome_offset_ratio > 0.6 ? '63' : (
+    //             (10 * welcome_offset_ratio + 57).toString()
+    //         ))) + '%'; // 57 ---> 73
+    // document.getElementById("welcome-planet2-shadow").style.bottom =
+    //     (welcome_offset_ratio < -1 ? '52' :
+    //         (welcome_offset_ratio > 0.6 ? '68' : (
+    //             (10 * welcome_offset_ratio + 62).toString()
+    //         ))) + '%'; // 57 ---> 73
     document.getElementById("welcome-p2-wrapper").style.opacity =
         (welcome_offset_ratio < 0.3 ? '0.3' : '1'); // 0.3 --- 1
     document.getElementById("welcome-p2").style.opacity =

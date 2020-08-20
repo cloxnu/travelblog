@@ -11,18 +11,93 @@ function getQueryVariable(v) {
 }
 
 let art = getQueryVariable('art');
-let all_blog_json;
-let blog_path;
-
-readall(function (json) {
-    all_blog_json = json;
-    let blog = all_blog_json.filter(function (blog) {
-        return blog.id === art;
-    })
-    if (blog.length) {
-        blog_path = blog[0].dir + "/" + blog[0].content;
-        read(blog_path, function (content) {
-            document.getElementById('content').innerHTML = marked(content);
-        })
+let cdn = function () {
+    const v = getQueryVariable('cdn');
+    if (v === 'false') {
+        return false;
+    } else {
+        return true;
     }
-})
+}();
+
+if (cdn) {
+    document.getElementById("cdn-btn").classList.add("green");
+    // document.getElementById("cdn-line").classList.add("bg-green");
+    document.getElementById("cdn-point").classList.add("bg-green");
+    // document.getElementById("cdn-div").classList.add("bg-green");
+    document.getElementById("cdn-line").style.opacity = "0";
+    document.getElementById("cdn-point").style.opacity = "1";
+} else {
+    document.getElementById("cdn-btn").classList.add("red");
+    document.getElementById("cdn-line").classList.add("bg-red");
+    // document.getElementById("cdn-div").classList.add("bg-red");
+    document.getElementById("cdn-point").style.opacity = "0";
+    document.getElementById("cdn-line").style.opacity = "1";
+}
+
+let blog_json;
+let blog_title;
+let blog_content;
+let blog_cover;
+
+if (art) {
+    read_info(art, function (json) {
+        blog_json = json;
+        blog_title = blog_json["title"];
+        blog_cover = content(art) + blog_json["cover"];
+        read(art + "/" + blog_json["content"], function (content) {
+            blog_content = content;
+            load_page();
+        })
+    }, function (e) {
+        window.location.href = "404.php";
+    })
+}
+
+
+function load_page() {
+    const baseURL = function () {
+        if (cdn) {
+            return content(art);
+        } else {
+            return "content/" + art + "/";
+        }
+    }();
+
+    let renderer = {
+        html(html) {
+            return html.replace("src=\"", `src=\"${baseURL}`);
+        }
+    };
+
+    marked.use({ renderer });
+    document.getElementById("content").innerHTML = marked(blog_content, {
+        baseUrl: baseURL
+    });
+
+    document.getElementById("cover-img").style.opacity = "1";
+    document.getElementById("cover-img").src = blog_cover;
+    document.getElementById("title").innerText = blog_title;
+
+    document.getElementById("creation-date").innerText = blog_json["creation_date"];
+
+    add_title_link();
+    add_touch();
+}
+
+
+// let all_blog_json;
+// let blog_path;
+//
+// read_all(function (json) {
+//     all_blog_json = json;
+//     let blog = all_blog_json.filter(function (blog) {
+//         return blog.id === art;
+//     })
+//     if (blog.length) {
+//         blog_path = blog[0].dir + "/" + blog[0].content;
+//         read(blog_path, function (content) {
+//             document.getElementById('content').innerHTML = marked(content);
+//         })
+//     }
+// })

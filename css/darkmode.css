@@ -3,12 +3,22 @@
     --foreground-color: #000;
     --shadow-color: rgba(0, 0, 0, 0.05);
     --dark-mode-btn-bgcolor: rgb(240, 240, 240);
+    --quote-bgcolor: rgb(240, 240, 240);
+    --quote-fgcolor: rgb(100, 100, 100);
+    --line-color: rgb(230, 230, 230);
     --black-foreground-opacity: 1;
     --white-foreground-opacity: 0;
     --black-shelter-opacity: 0;
     --white-shelter-opacity: 0.3;
     --dark-mode-icon-flip: 180deg;
     --foreground-brightness: 0%;
+    --light-grey-brightness: 90%;
+
+    --green: rgb(52, 199, 89);
+    --red: rgb(255, 59, 48);
+    --blue: rgb(0, 122, 255);
+    --light-grey: rgb(209, 209, 214);
+    --grey: rgb(142, 142, 147);
 }
 
 .dark-mode-on {
@@ -16,12 +26,22 @@
     --foreground-color: #FFF;
     --shadow-color: rgba(255, 255, 255, 0.05);
     --dark-mode-btn-bgcolor: rgb(50, 50, 50);
+    --quote-bgcolor: rgb(50, 50, 50);
+    --quote-fgcolor: rgb(200, 200, 200);
+    --line-color: rgb(100, 100, 100);
     --black-foreground-opacity: 0;
     --white-foreground-opacity: 1;
     --black-shelter-opacity: 0.3;
     --white-shelter-opacity: 0;
     --dark-mode-icon-flip: 0deg;
     --foreground-brightness: 100%;
+    --light-grey-brightness: 10%;
+
+    --green: rgb(48, 209, 88);
+    --red: rgb(255, 69, 58);
+    --blue: rgb(10, 132, 255);
+    --light-grey: rgb(58, 58, 60);
+    --grey: rgb(142, 142, 147);
 }
 
 .black-foreground {

@@ -11,7 +11,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="res/home/favicon114.png">
     <link rel="apple-touch-icon" sizes="144x144" href="res/home/favicon144.png">
 
-    <title>Travel & Life</title>
+    <title>Travel & Life - 一只狗的火星旅行计划</title>
 
     <?php require_once "read/res.php";?>
     <style><?php require_once "css/font.css.php"?></style>
@@ -47,6 +47,15 @@
     <img src="<?php home("downarrow")?>" id="head-arrow"/>
 </div>
 <div id="welcome">
+    <div id="welcome-planet1-div">
+        <img src="<?php home("planet1_shadow");?>" id="welcome-planet1-shadow"/>
+        <img src="<?php home("planet1");?>" id="welcome-planet1"/>
+    </div>
+    <div id="welcome-planet2-div">
+        <img src="<?php home("planet2_shadow");?>" id="welcome-planet2-shadow"/>
+        <img src="<?php home("planet2");?>" id="welcome-planet2"/>
+    </div>
+
     <div id="welcome-p1-wrapper">
         <p class="welcome-p" id="welcome-p1">
             我旅行的时间很长，<br/>
@@ -75,10 +84,16 @@
 <div id="top-div" class="cover-style-1" style="display: none">
     <img src="" id="top-cover" class="cover-image"/>
     <span id="top-shelter" class="cover-shelter"></span>
-    <p id="top-class" class="cover-class"></p>
     <p id="top-date" class="cover-date"></p>
-    <p id="top-title" class="cover-title"></p>
-    <p id="top-desc" class="cover-desc"></p>
+    <div id="top-text" class="cover-text">
+        <div class="cover-text-1">
+            <a id="top-title" class="cover-title"></a>
+            <p id="top-class" class="cover-class"></p>
+        </div>
+        <div class="cover-text-2">
+            <a id="top-desc" class="cover-desc"></a>
+        </div>
+    </div>
 </div>
 
 </body>

@@ -1,0 +1,116 @@
+body {
+    margin: 0 0 0 0;
+    cursor: default;
+    /*width: 100vw;*/
+    transition: background-color 0.5s, color 0.5s;
+    -webkit-transition: background-color 0.5s, color 0.5s;
+    background-color: var(--background-color);
+}
+
+div#head {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+}
+
+img#cover-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+#cover-shadow {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    left: 0;
+    background: linear-gradient(
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.01) 8.1%,
+            rgba(0, 0, 0, 0.039) 15.5%,
+            rgba(0, 0, 0, 0.083) 22.5%,
+            rgba(0, 0, 0, 0.14) 29%,
+            rgba(0, 0, 0, 0.207) 35.3%,
+            rgba(0, 0, 0, 0.282) 41.2%,
+            rgba(0, 0, 0, 0.36) 47.1%,
+            rgba(0, 0, 0, 0.44) 52.9%,
+            rgba(0, 0, 0, 0.518) 58.8%,
+            rgba(0, 0, 0, 0.593) 64.7%,
+            rgba(0, 0, 0, 0.66) 71%,
+            rgba(0, 0, 0, 0.717) 77.5%,
+            rgba(0, 0, 0, 0.761) 84.5%,
+            rgba(0, 0, 0, 0.79) 91.9%,
+            rgba(0, 0, 0, 0.8) 100%
+    );
+}
+
+#head-text {
+    top: 0;
+    left: 0;
+    width: 80%;
+    max-width: 800px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#class {
+    position: relative;
+    bottom: 30px;
+    /*padding: 0 30px 0;*/
+    /*left: 30px;*/
+    /*right: 30px;*/
+    margin-bottom: 6px;
+    font: 400 0.9em Poppins;
+    /*font: bold 0.9em Poppins;*/
+    text-transform: uppercase;
+    color: white;
+}
+
+#title {
+    position: relative;
+    bottom: 30px;
+    /*padding: 0 30px 0;*/
+    /*left: 30px;*/
+    /*right: 30px;*/
+    font: bold 2em FZYanS;
+    color: white;
+}
+
+div#info {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 80vw;
+    max-width: 800px;
+    height: 60px;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+}
+
+#creation-date {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin: auto;
+    font: 600 0.8em Recursive;
+    color: var(--grey);
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+}
+
+/*hr {*/
+/*    border: 1px solid var(--line-color);*/
+/*    width: 50vw;*/
+/*    max-width: 400px;*/
+/*    margin: 50px auto;*/
+/*    transition: border 0.5s;*/
+/*    -webkit-transition: border 0.5s;*/
+/*}*/

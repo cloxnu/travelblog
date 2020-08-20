@@ -1,3 +1,14 @@
+/*div#loading-wrapper {*/
+/*    position: fixed;*/
+/*    width: 100vw;*/
+/*    height: 100vh;*/
+/*    left: 0;*/
+/*    top: 0;*/
+/*    overflow-x: hidden;*/
+/*    overflow-y: hidden;*/
+/*    z-index: 45;*/
+/*}*/
+
 div#loading-div {
     position: fixed;
     width: 100vw;
@@ -19,7 +30,7 @@ div#loading-div {
 
 span#loading-shadow {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;

@@ -1,6 +1,6 @@
 {
-    "prefix": "https://cdn.jsdelivr.net/gh/cloxnu/an.dog@v1.0.5/",
-    "prefix1": "",
+    "prefix1": "https://cdn.jsdelivr.net/gh/cloxnu/an.dog@v1.0.6/",
+    "prefix": "",
     "home": {
         "travelDogIconHome": "res/home/travelDogIconHome.png",
         "travelDogIconHome_white": "res/home/travelDogIconHome_white.png",
@@ -9,15 +9,26 @@
         "sun": "res/home/sun.svg",
         "moon": "res/home/moon.svg",
         "head_video2": "res/home/head3.mp4",
-        "head_video2_poster": "res/home/head3.jpg"
+        "head_video2_poster": "res/home/head3.jpg",
+        "planet1": "res/home/planet1.svg",
+        "planet2": "res/home/planet2.svg",
+        "planet1_shadow": "res/home/planet1_shadow.svg",
+        "planet2_shadow": "res/home/planet2_shadow.svg"
     },
     "font": {
         "FZYanSJW": "res/font/FZYanSJW.TTF",
         "FZYanSJW_Cu": "res/font/FZYanSJW_Cu.TTF",
         "Kano": "res/font/Kano.otf",
+        "Recursive-Light": "res/font/Recursive-Light.ttf",
+        "Recursive-Regular": "res/font/Recursive-Regular.ttf",
+        "Recursive-Bold": "res/font/Recursive-Bold.ttf",
+        "Recursive-Black": "res/font/Recursive-Black.ttf",
         "Poppins-Regular": "res/font/Poppins-Regular.ttf",
         "Poppins-SemiBold": "res/font/Poppins-SemiBold.ttf",
-        "FiraMono-Medium": "res/font/FiraMono-Medium.ttf"
+        "Poppins-Bold": "res/font/Poppins-Bold.ttf",
+        "Poppins-Black": "res/font/Poppins-Black.ttf",
+        "FiraMono-Medium": "res/font/FiraMono-Medium.ttf",
+        "Gotham-Medium": "res/font/Gotham-Medium.ttf"
     },
     "content": "content/"
 }

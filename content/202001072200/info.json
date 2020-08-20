@@ -1,10 +1,11 @@
 {
     "id": "003",
     "dir": "202001072200",
+    "class": "travel",
     "title": "西安地铁游",
     "cover": "res/1.jpeg",
-    "description": "description",
+    "description": "西安机场城际开通之时，记此地铁体验游。",
     "content": "content.md",
-    "creation_date": "2020-01-07-22:00",
-    "modification_date": "2020-01-07-22:00"
+    "creation_date": "2020/01/07 22:00",
+    "modification_date": "2020/01/07 22:00"
 }

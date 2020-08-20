@@ -23,14 +23,27 @@ a#home-button-a {
     -webkit-transition: border-radius 0.3s, -webkit-transform 0.3s, background-color 0.5s;
 }
 
-div#home-button-div:hover {
+@media (hover: hover) and (pointer: fine) {
+    div#home-button-div:hover {
+        width: 60px;
+        height: 60px;
+        transform: translate(5px, 5px);
+        -webkit-transform: translate(5px, 5px);
+    }
+
+    div#home-button-div:hover a#home-button-a {
+        background-color: var(--dark-mode-btn-bgcolor);
+    }
+}
+
+div#home-button-div.on-touch {
     width: 60px;
     height: 60px;
     transform: translate(5px, 5px);
     -webkit-transform: translate(5px, 5px);
 }
 
-div#home-button-div:hover a#home-button-a {
+div#home-button-div.on-touch a#home-button-a {
     background-color: var(--dark-mode-btn-bgcolor);
 }
 

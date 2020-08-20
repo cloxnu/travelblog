@@ -109,7 +109,7 @@ div#welcome {
     left: 0;
     right: 0;
     color: var(--foreground-color);
-    z-index: 11;
+    z-index: 12;
     transition: color 0.5s;
     -webkit-transition: color 0.5s;
 }
@@ -124,6 +124,70 @@ div#welcome {
     .welcome-p {
         font-size: 0.4em;
     }
+}
+
+#welcome-planet1-div {
+    position: absolute;
+    bottom: 60%;
+    left: 60%;
+    width: 20%;
+    max-width: 200px;
+    height: auto;
+    z-index: 11;
+    opacity: 1;
+}
+
+#welcome-planet1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 11;
+}
+
+#welcome-planet1-shadow {
+    position: absolute;
+    bottom: 0;
+    right: -5%;
+    width: 100%;
+    height: auto;
+    filter: brightness(var(--light-grey-brightness));
+    z-index: 10;
+    transition: filter 0.5s;
+    -webkit-transition: filter 0.5s;
+}
+
+#welcome-planet2-div {
+    position: absolute;
+    top: 65%;
+    right: 60%;
+    width: 15%;
+    max-width: 150px;
+    height: auto;
+    z-index: 11;
+    opacity: 1;
+}
+
+#welcome-planet2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 11;
+}
+
+#welcome-planet2-shadow {
+    position: absolute;
+    bottom: 0;
+    right: -5%;
+    width: 100%;
+    height: auto;
+    filter: brightness(var(--light-grey-brightness));
+    z-index: 10;
+    transition: filter 0.5s;
+    -webkit-transition: filter 0.5s;
 }
 
 p#welcome-p1 {
@@ -156,11 +220,11 @@ a#about-me-a {
     width: 100px;
     height: 36px;
     border-radius: 20px;
-    z-index: 12;
+    z-index: 13;
 }
 
 a#about-me-a::before {
-    z-index: 11;
+    z-index: 12;
 }
 
 .button-link {
@@ -209,7 +273,7 @@ a#about-me-a::before {
 
 .button-link .western {
     margin: auto;
-    font: bold 12px Poppins;
+    font: 400 12px Poppins;
     user-select: none;
     -webkit-user-select: none;
 }
@@ -228,7 +292,12 @@ div#top-div {
     z-index: 11;
 }
 
+.cover-date {
+    z-index: 12;
+}
+
 .cover-title {
+    text-decoration: none;
     z-index: 12;
 }
 
@@ -237,5 +306,6 @@ div#top-div {
 }
 
 .cover-desc {
+    text-decoration: none;
     z-index: 12;
 }
