@@ -47,8 +47,7 @@ span#loading-shadow {
 }
 
 .loading {
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 span#loading-shelter {

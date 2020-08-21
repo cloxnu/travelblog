@@ -18,7 +18,7 @@ file.onreadystatechange = function ()
             return prefix + json["font"][name];
         };
         content = function (name) {
-            return prefix + json["content"] + name + "/";
+            return prefix + json["content"] + name;
         }
     }
 }

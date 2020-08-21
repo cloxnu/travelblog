@@ -16,7 +16,7 @@ function load_top() {
         return ;
     read_info(info.top, function (top_info) {
         console.log(top_info);
-        const dir = content(top_info.dir);
+        const dir = content(top_info.dir) + "/";
         document.getElementById("top-cover").src = dir + top_info["cover"];
         document.getElementById("top-date").innerText = top_info["creation_date"];
         document.getElementById("top-class").innerText = top_info["class"];

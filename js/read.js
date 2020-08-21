@@ -28,6 +28,21 @@ function read(path, successCallback, errorCallback) {
     }
 }
 
+function request(url, successCallback, errorCallback) {
+    const xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
+            try {
+                successCallback(xmlhttp.responseText);
+            } catch (e) {
+                errorCallback(e);
+            }
+        }
+    }
+}
+
 function read_json(path, successCallback, errorCallback) {
     const xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET", "read/?path=" + path, true);

@@ -44,21 +44,28 @@ if (art) {
     read_info(art, function (json) {
         blog_json = json;
         blog_title = blog_json["title"];
-        blog_cover = content(art) + blog_json["cover"];
-        read(art + "/" + blog_json["content"], function (content) {
-            blog_content = content;
-            load_page();
-        })
+        blog_cover = content(art + "/" + blog_json["cover"]);
+        if (cdn) {
+            request(content(art + "/" + blog_json["content"]), function (content) {
+                blog_content = content;
+                load_page();
+            });
+        } else {
+            read(art + "/" + blog_json["content"], function (content) {
+                blog_content = content;
+                load_page();
+            });
+        }
     }, function (e) {
         window.location.href = "404.php";
-    })
+    });
 }
 
 
 function load_page() {
     const baseURL = function () {
         if (cdn) {
-            return content(art);
+            return content(art) + "/";
         } else {
             return "content/" + art + "/";
         }

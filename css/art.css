@@ -51,7 +51,7 @@ img#cover-img {
 #head-text {
     top: 0;
     left: 0;
-    width: 80%;
+    width: 85%;
     max-width: 800px;
     height: 100%;
     margin: auto;
@@ -87,7 +87,7 @@ div#info {
     top: 0;
     left: 0;
     margin: auto;
-    width: 80vw;
+    width: 85%;
     max-width: 800px;
     height: 60px;
     transition: color 0.5s;
