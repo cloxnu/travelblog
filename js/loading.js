@@ -13,8 +13,3 @@ function loading() {
         document.getElementById("loading-shelter").style.display = "block";
     }, 500);
 }
-
-window.onbeforeunload = function () {
-    console.log("back");
-    loaded();
-}
