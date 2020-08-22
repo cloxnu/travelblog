@@ -10,7 +10,9 @@
 
 由于即将要乘坐海南航空的大飞机从杭州飞西安路过，提前地图上一查，嘿！西安机场地铁修好了，正好体验一波。于是有了这篇文章。起飞前留影：
 
-<video src="res/img20.MOV"></video>
+<video controls>
+    <source src="res/img20.MOV" type="video/mp4">
+</video>
 
 ![海航大飞机](res/img21.jpeg)
 
