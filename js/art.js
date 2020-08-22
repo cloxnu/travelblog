@@ -85,26 +85,10 @@ function load_page() {
     document.getElementById("cover-img").style.opacity = "1";
     document.getElementById("cover-img").src = blog_cover;
     document.getElementById("title").innerText = blog_title;
+    document.getElementById("class").innerText = blog_json["class"];
 
     document.getElementById("creation-date").innerText = blog_json["creation_date"];
 
     add_title_link();
     add_touch();
 }
-
-
-// let all_blog_json;
-// let blog_path;
-//
-// read_all(function (json) {
-//     all_blog_json = json;
-//     let blog = all_blog_json.filter(function (blog) {
-//         return blog.id === art;
-//     })
-//     if (blog.length) {
-//         blog_path = blog[0].dir + "/" + blog[0].content;
-//         read(blog_path, function (content) {
-//             document.getElementById('content').innerHTML = marked(content);
-//         })
-//     }
-// })

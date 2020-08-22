@@ -40,7 +40,7 @@
     <span id="cover-shadow"></span>
     <div id="head-text">
         <div id="title"></div>
-        <div id="class">travel</div>
+        <div id="class"></div>
     </div>
 </div>
 <div id="info">
