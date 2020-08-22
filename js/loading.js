@@ -12,4 +12,7 @@ function loading() {
     window.setTimeout(function () {
         document.getElementById("loading-shelter").style.display = "block";
     }, 500);
+    window.setTimeout(function () {
+        loaded();
+    }, 600);
 }
