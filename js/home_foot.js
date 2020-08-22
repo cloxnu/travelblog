@@ -10,6 +10,21 @@ read_all(function (json) {
     all_blog_json = json;
 })
 
+add_transition_animation();
+
+function add_transition_animation() {
+    for (let ele of document.getElementsByClassName("transition")) {
+        ele.addEventListener("click", function (e) {
+            console.log("clicked");
+            e.preventDefault();
+            loading();
+            window.setTimeout(function () {
+                window.location.href = ele.href;
+            }, 500);
+        })
+    }
+}
+
 function load_top() {
     console.log(info.top);
     if (info.top.length === 0)

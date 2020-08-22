@@ -50,12 +50,12 @@ span#loading-shadow {
     overflow: hidden;
 }
 
-span#loading-shelter {
-    display: none;
-}
+/*span#loading-shelter {*/
+/*    display: none;*/
+/*}*/
 
 .loading span#loading-shelter {
-    display: block;
+    /*display: block;*/
     position: fixed;
     width: 200vw;
     height: 200vh;

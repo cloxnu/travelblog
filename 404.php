@@ -16,9 +16,7 @@
     <?php include "read/res.php";?>
     <style><?php include "css/font.css.php"?></style>
     <script src="js/darkmode.js"></script>
-    <script src="js/loading.js"></script>
     <link rel="stylesheet" type="text/css" href="css/darkmode.css"/>
-    <link rel="stylesheet" type="text/css" href="css/loading.css"/>
     <link rel="stylesheet" type="text/css" href="css/homebutton.css"/>
     <link rel="stylesheet" type="text/css" href="css/404.css"/>
 </head>
@@ -28,7 +26,6 @@
 
 <?php include_once "template/homeButton.php"?>
 <?php include_once "template/darkmodeButton.php"?>
-<?php include_once "template/loading.php"?>
 
 <div id="errordiv">
     <p id="errortext">

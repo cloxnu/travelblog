@@ -87,11 +87,11 @@
     <p id="top-date" class="cover-date"></p>
     <div id="top-text" class="cover-text">
         <div class="cover-text-1">
-            <a id="top-title" class="cover-title"></a>
+            <a id="top-title" class="cover-title transition"></a>
             <p id="top-class" class="cover-class"></p>
         </div>
         <div class="cover-text-2">
-            <a id="top-desc" class="cover-desc"></a>
+            <a id="top-desc" class="cover-desc transition"></a>
         </div>
     </div>
 </div>
