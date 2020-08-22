@@ -114,3 +114,36 @@ div#info {
 /*    transition: border 0.5s;*/
 /*    -webkit-transition: border 0.5s;*/
 /*}*/
+
+div#end {
+    position: relative;
+    width: 85vw;
+    max-width: 800px;
+    margin: 70px auto;
+    text-align: center;
+    font: 400 0.9em Poppins;
+    color: var(--grey);
+    text-transform: uppercase;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+}
+
+div#end::before, div#end::after {
+    content: "";
+    position: absolute;
+    width: calc(30% - 30px);
+    height: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--grey);
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+}
+
+div#end::before {
+    left: 20%;
+}
+
+div#end::after {
+    right: 20%;
+}

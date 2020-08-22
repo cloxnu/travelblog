@@ -91,4 +91,6 @@ function load_page() {
 
     add_title_link();
     add_touch();
+
+    loaded();
 }

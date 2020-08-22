@@ -27,3 +27,7 @@ function drawLines(){
 window.onresize = function(event) {
     drawLines();
 };
+
+window.onload = function () {
+    loaded();
+}

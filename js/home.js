@@ -1,3 +1,7 @@
+window.onload = function () {
+    loaded();
+}
+
 window.addEventListener('scroll', function (e) {
     const screen_height = document.documentElement.clientHeight;
     const welcome_offset = -document.getElementById("welcome").getBoundingClientRect().top;
