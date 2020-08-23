@@ -13,7 +13,8 @@
         "planet1": "res/home/planet1.svg",
         "planet2": "res/home/planet2.svg",
         "planet1_shadow": "res/home/planet1_shadow.svg",
-        "planet2_shadow": "res/home/planet2_shadow.svg"
+        "planet2_shadow": "res/home/planet2_shadow.svg",
+        "arrow_right": "res/home/arrow_right.svg"
     },
     "font": {
         "FZYanSJW": "res/font/FZYanSJW.TTF",

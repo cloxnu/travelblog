@@ -80,6 +80,12 @@
     color: white;
 }
 
+@media screen and (max-width: 500px) {
+    .cover-style-1 .cover-title {
+        font-size: 2.5em;
+    }
+}
+
 .cover-style-1 .cover-class {
     position: relative;
     bottom: 12px;
@@ -88,12 +94,6 @@
     font: 400 0.9em Poppins;
     text-transform: uppercase;
     color: white;
-}
-
-@media screen and (max-width: 500px) {
-    .cover-style-1 .cover-title {
-        font-size: 2.5em;
-    }
 }
 
 .cover-text .cover-text-2 {
@@ -118,6 +118,25 @@
     text-align: center;
     font: normal 1em FZYanS;
     color: white;
+}
+
+.cover-style-1 .cover-link {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 300px;
+    top: 50px;
+    text-align: center;
+    font: 400 0.9em Poppins;
+    color: white;
+}
+
+.cover-link .cover-link-img {
+    position: relative;
+    height: 0.7em;
+    width: auto;
+    margin: auto 10px;
 }
 
 

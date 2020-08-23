@@ -24,6 +24,7 @@ function load_top() {
         document.getElementById("top-title").href = `./?art=${top_info.dir}`;
         document.getElementById("top-desc").innerText = top_info["description"];
         document.getElementById("top-desc").href = `./?art=${top_info.dir}`;
+        document.getElementById("top-link").href = `./?art=${top_info.dir}`;
 
         document.getElementById("top-div").style.display = "block";
     })

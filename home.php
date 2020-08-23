@@ -81,7 +81,7 @@
         <p class="western">ABOUT ME</p>
     </a>
 </div>
-<div id="top-div" class="cover-style-1" style="display: none">
+<div id="top-div" class="cover-style-1 dark-mode-on" style="display: none">
     <img src="" id="top-cover" class="cover-image"/>
     <span id="top-shelter" class="cover-shelter"></span>
     <p id="top-date" class="cover-date"></p>
@@ -92,6 +92,9 @@
         </div>
         <div class="cover-text-2">
             <a id="top-desc" class="cover-desc transition"></a>
+            <a id="top-link" class="cover-link transition">EXPLORE
+                <img src="<?php home("arrow_right");?>" id="top-link-img" class="cover-link-img"/>
+            </a>
         </div>
     </div>
 </div>
