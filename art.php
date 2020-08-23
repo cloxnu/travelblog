@@ -55,5 +55,6 @@
 
 <script src="js/touch.js"></script>
 <script src="js/add_title_link.js"></script>
+<script src="js/loading_transition.js"></script>
 <script src="js/art.js"></script>
 </html>

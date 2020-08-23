@@ -99,5 +99,6 @@
 </body>
 
 <script src="js/home_foot.js"></script>
+<script src="js/loading_transition.js"></script>
 <script src="js/touch.js"></script>
 </html>

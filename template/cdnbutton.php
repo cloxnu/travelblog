@@ -1,4 +1,4 @@
-<a id="cdn-a" class="touch">
+<a id="cdn-a" class="touch transition">
     <script>setCDNLink();</script>
     <span id="cdn-btn">
         CDN

@@ -16,10 +16,8 @@ function loading() {
 
 let isFirstShow = true;
 window.onpageshow = function () {
-    console.log("page show");
     if (isFirstShow) {
-        console.log("first show");
-        isFirstShow = true;
+        isFirstShow = false;
     } else {
         document.body.classList.remove("loading");
         document.getElementById("loading-shelter").style.display = "none";
