@@ -11,5 +11,6 @@ function loading() {
     document.body.classList.add("loading");
     window.setTimeout(function () {
         document.getElementById("loading-shelter").style.display = "block";
+        document.body.classList.remove("loading");
     }, 500);
 }
