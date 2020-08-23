@@ -92,5 +92,26 @@ function load_page() {
     add_title_link();
     add_touch();
 
-    loaded();
+    load_once(load_item.content);
+}
+
+
+let content_loaded = false;
+let page_loaded = false;
+const load_item = {
+    content: 'content',
+    page: 'page'
+}
+function load_once (which) {
+    if (which === load_item.content)
+        content_loaded = true;
+    else if (which === load_item.page)
+        page_loaded = true;
+
+    if (content_loaded && page_loaded)
+        loaded();
+}
+
+window.onload = function () {
+    load_once(load_item.page);
 }

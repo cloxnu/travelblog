@@ -11,6 +11,17 @@ function loading() {
     document.body.classList.add("loading");
     window.setTimeout(function () {
         document.getElementById("loading-shelter").style.display = "block";
-        document.body.classList.remove("loading");
     }, 500);
+}
+
+let isFirstShow = true;
+window.onpageshow = function () {
+    console.log("page show");
+    if (isFirstShow) {
+        console.log("first show");
+        isFirstShow = true;
+    } else {
+        document.body.classList.remove("loading");
+        document.getElementById("loading-shelter").style.display = "none";
+    }
 }
