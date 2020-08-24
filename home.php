@@ -98,6 +98,7 @@
         </div>
     </div>
 </div>
+<div id="blog-div" style="display: none"></div>
 
 </body>
 

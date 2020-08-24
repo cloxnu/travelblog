@@ -314,3 +314,8 @@ div#top-div {
     text-decoration: none;
     z-index: 12;
 }
+
+.cover-whole-link {
+    text-decoration: none;
+    z-index: 13;
+}

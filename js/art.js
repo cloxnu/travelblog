@@ -96,19 +96,18 @@ function load_page() {
 }
 
 
-let content_loaded = false;
-let page_loaded = false;
+let has_loaded = {
+    content: false,
+    page: false
+}
 const load_item = {
     content: 'content',
     page: 'page'
 }
 function load_once (which) {
-    if (which === load_item.content)
-        content_loaded = true;
-    else if (which === load_item.page)
-        page_loaded = true;
+    has_loaded[which] = true;
 
-    if (content_loaded && page_loaded)
+    if (Object.values(has_loaded).every(Boolean))
         loaded();
 }
 

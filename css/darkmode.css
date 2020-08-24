@@ -13,11 +13,15 @@
     --dark-mode-icon-flip: 180deg;
     --foreground-brightness: 0%;
     --light-grey-brightness: 90%;
+    --button-bgcolor: rgb(240, 240, 240);
+    --button-highlight-bgcolor: rgb(220, 220, 220);
 
     --green: rgb(52, 199, 89);
     --red: rgb(255, 59, 48);
     --blue: rgb(0, 122, 255);
     --light-grey: rgb(209, 209, 214);
+    --light-grey2: rgb(229, 229, 234);
+    --light-grey3: rgb(242, 242, 247);
     --grey: rgb(142, 142, 147);
 }
 
@@ -36,11 +40,15 @@
     --dark-mode-icon-flip: 0deg;
     --foreground-brightness: 100%;
     --light-grey-brightness: 10%;
+    --button-bgcolor: rgb(40, 40, 40);
+    --button-highlight-bgcolor: rgb(50, 50, 50);
 
     --green: rgb(48, 209, 88);
     --red: rgb(255, 69, 58);
     --blue: rgb(10, 132, 255);
     --light-grey: rgb(58, 58, 60);
+    --light-grey2: rgb(44, 44, 46);
+    --light-grey3: rgb(28, 28, 30);
     --grey: rgb(142, 142, 147);
 }
 
