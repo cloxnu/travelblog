@@ -1,6 +1,5 @@
 body {
     margin: 0 0 0 0;
-    cursor: default;
     transition: background-color 0.5s;
     -webkit-transition: background-color 0.5s;
     background-color: var(--background-color);

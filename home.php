@@ -87,7 +87,7 @@
     <p id="top-date" class="cover-date"></p>
     <div id="top-text" class="cover-text">
         <div class="cover-text-1">
-            <a id="top-title" class="cover-title transition"></a>
+            <a id="top-title" class="cover-title transition touch"></a>
             <p id="top-class" class="cover-class"></p>
         </div>
         <div class="cover-text-2">
