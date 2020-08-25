@@ -69,7 +69,9 @@ img#cover-img {
     font: 400 0.9em Poppins;
     /*font: bold 0.9em Poppins;*/
     text-transform: uppercase;
-    color: white;
+    color: var(--foreground-color);
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
 }
 
 #title {
@@ -79,7 +81,9 @@ img#cover-img {
     /*left: 30px;*/
     /*right: 30px;*/
     font: bold 2em FZYanS;
-    color: white;
+    color: var(--foreground-color);
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
 }
 
 div#info {

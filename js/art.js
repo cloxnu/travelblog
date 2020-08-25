@@ -44,7 +44,7 @@ if (art) {
     read_info(art, function (json) {
         blog_json = json;
         blog_title = blog_json["title"];
-        blog_cover = content(art + "/" + blog_json["cover"]);
+        blog_cover = blog_json["cover"].length === 0 ? "" : content(art + "/" + blog_json["cover"]);
         if (cdn) {
             request(content(art + "/" + blog_json["content"]), function (content) {
                 blog_content = content;
@@ -82,8 +82,16 @@ function load_page() {
         baseUrl: baseURL
     });
 
-    document.getElementById("cover-img").style.opacity = "1";
-    document.getElementById("cover-img").src = blog_cover;
+    if (blog_cover.length === 0) {
+        document.getElementById("cover-img").style.display = "none";
+        document.getElementById("cover-shadow").style.display = "none";
+        document.getElementById("head").style.height = "30vh";
+        document.getElementById("head").classList.remove("dark-mode-on");
+    } else {
+        document.getElementById("cover-img").style.opacity = "1";
+        document.getElementById("cover-img").src = blog_cover;
+    }
+
     document.getElementById("title").innerText = blog_title;
     document.getElementById("class").innerText = blog_json["class"];
 

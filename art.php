@@ -35,7 +35,7 @@
 <?php include_once "template/darkmodeButton.php"?>
 <?php include_once "template/loading.php"?>
 
-<div id="head">
+<div id="head" class="dark-mode-on">
     <img src="" id="cover-img"/>
     <span id="cover-shadow"></span>
     <div id="head-text">

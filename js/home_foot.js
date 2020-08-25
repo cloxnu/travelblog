@@ -32,10 +32,17 @@ function load_top() {
 }
 
 function load_blogs() {
-    const blog_html = function (no, cover, creation_date, classification, title, desc, link) {
+    const blog_html = function (no, cover_style, cover, creation_date, classification, title, desc, link) {
+        const cover_display = function () {
+            if (cover.length === 0)
+                return 'none';
+            else
+                return 'block';
+        }();
         return `
-        <div id="blog-${no}-div" class="cover-style-2">
-            <a id="blog-${no}-cover-link" class="cover-image-link transition" href="${link}">
+        <div id="blog-${no}-div" class="${cover_style}" 
+        style="--style2-h-in-w500: ${cover.length === 0 ? "50vh" : "100vh"}">
+            <a id="blog-${no}-cover-link" class="cover-image-link transition" href="${link}" style="display: ${cover_display}">
                 <img src="${cover}" id="blog-${no}-cover" class="cover-image"/>
             </a>
             <div id="blog-${no}-text" class="cover-text">
@@ -52,8 +59,11 @@ function load_blogs() {
     };
 
     let all_blog_html = "";
+    let is_style2 = false;
     all_blog_json.forEach(function (ele, idx) {
-        all_blog_html += blog_html(idx, content(ele["dir"] + "/" + ele["cover"]), ele["creation_date"], ele["class"], ele["title"], ele["description"], `./?art=${ele["dir"]}`);
+        const cover_path = ele["cover"].length === 0 ? "" : content(ele["dir"] + "/" + ele["cover"]);
+        is_style2 = !is_style2;
+        all_blog_html += blog_html(idx, is_style2 ? "cover-style-2" : "cover-style-3", cover_path, ele["creation_date"], ele["class"], ele["title"], ele["description"], `./?art=${ele["dir"]}`);
     });
 
     document.getElementById("blog-div").innerHTML = all_blog_html;
