@@ -50,9 +50,9 @@ function load_blogs() {
                 return '--foreground-color';
         }();
         return `
-        <div id="blog-${no}-div" class="${cover_style}" 
+        <div id="blog-${no}-div" class="${cover_style} blog-class-${classification}" 
         style="--style2-h-in-w500: ${cover.length === 0 ? "50vh" : "100vh"}">
-            <hr class="cover-hr" style="opacity: ${no === 0 ? "0" : "1"}">
+            <hr class="cover-hr">
             <a id="blog-${no}-cover-link" class="cover-image-link transition" href="${link}" style="display: ${cover_display}">
                 <img src="${cover}" id="blog-${no}-cover" class="cover-image"/>
             </a>
@@ -72,6 +72,10 @@ function load_blogs() {
     let all_blog_html = "";
     let is_style2 = false;
     all_blog_json.forEach(function (ele, idx) {
+        if (current_classification !== classification_items.all) {
+            if (current_classification !== ele["class"])
+                return ;
+        }
         const cover_path = ele["cover"].length === 0 ? "" : content(ele["dir"] + "/" + ele["cover"]);
         is_style2 = !is_style2;
         all_blog_html += blog_html(idx, is_style2 ? "cover-style-2" : "cover-style-3", cover_path, ele["creation_date"], ele["class"], ele["title"], ele["description"], `./?art=${ele["dir"]}`);
@@ -81,6 +85,27 @@ function load_blogs() {
     document.getElementById("blog-div").style.display = "block";
 
     add_transition_animation();
+}
+
+
+const classification_items = {
+    all: "all",
+    travel: "travel",
+    life: "life",
+    inspiration: "inspiration"
+};
+let current_classification = classification_items.all;
+
+function class_btn_clicked(name) {
+    if (name === current_classification)
+        return ;
+    for (let ele of document.getElementsByClassName("class-btn")) {
+        ele.classList.remove("active");
+    }
+    document.getElementById(`class-btn-${name}`).classList.add("active");
+    current_classification = name;
+
+    load_blogs();
 }
 
 

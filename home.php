@@ -98,6 +98,20 @@
         </div>
     </div>
 </div>
+<div id="class-div">
+    <a id="class-btn-all" class="button-link touch class-btn active" onclick="class_btn_clicked('all')">
+        <p class="western">ALL</p>
+    </a>
+    <a id="class-btn-travel" class="button-link touch class-btn" onclick="class_btn_clicked('travel')">
+        <p class="western">TRAVEL</p>
+    </a>
+    <a id="class-btn-life" class="button-link touch class-btn" onclick="class_btn_clicked('life')">
+        <p class="western">LIFE</p>
+    </a>
+    <a id="class-btn-inspiration" class="button-link touch class-btn" onclick="class_btn_clicked('inspiration')">
+        <p class="western">INSPIRATION</p>
+    </a>
+</div>
 <div id="blog-div" style="display: none"></div>
 
 </body>
