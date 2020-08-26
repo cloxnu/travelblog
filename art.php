@@ -35,7 +35,7 @@
 <?php include_once "template/darkmodeButton.php"?>
 <?php include_once "template/loading.php"?>
 <span id="nav-shelter" onclick="nav_clicked()"></span>
-<div id="nav-div" style="display: none">
+<div id="nav-div">
     <a id="nav-a" onclick="nav_clicked()">
         <p id="nav-title"></p>
         <img id="nav-img" src="<?php art("down_triangle")?>"/>
