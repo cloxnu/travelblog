@@ -87,10 +87,11 @@ function load_page() {
     });
 
     if (all_heading.length !== 0) {
-        document.getElementById("nav-div").style.display = "block";
         update_heading_pos();
         listen_document_height_change();
         window.addEventListener('scroll', scroll_handler);
+    } else {
+        document.getElementById("nav-div").style.display = "none";
     }
 
     if (blog_cover.length === 0) {
