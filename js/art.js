@@ -86,9 +86,12 @@ function load_page() {
         baseUrl: baseURL
     });
 
-    update_heading_pos();
-    listen_document_height_change();
-    window.addEventListener('scroll', scroll_handler);
+    if (all_heading.length !== 0) {
+        document.getElementById("nav-div").style.display = "block";
+        update_heading_pos();
+        listen_document_height_change();
+        window.addEventListener('scroll', scroll_handler);
+    }
 
     if (blog_cover.length === 0) {
         document.getElementById("cover-img").style.display = "none";
