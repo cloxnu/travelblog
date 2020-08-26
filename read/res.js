@@ -19,7 +19,7 @@ file.onreadystatechange = function ()
         };
         content = function (name) {
             return prefix + json["content"] + name;
-        }
+        };
     }
 }
 file.send();

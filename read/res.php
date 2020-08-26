@@ -36,6 +36,11 @@ function home($name) {
     echo prefix() . $res['home'][$name];
 }
 
+function art($name) {
+    global $res;
+    echo prefix() . $res['art'][$name];
+}
+
 function font($name) {
     global $res;
     echo prefix() . $res['font'][$name];

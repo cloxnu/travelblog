@@ -16,6 +16,9 @@
         "planet2_shadow": "res/home/planet2_shadow.svg",
         "arrow_right": "res/home/arrow_right.svg"
     },
+    "art": {
+        "down_triangle": "res/art/down_triangle.svg"
+    },
     "font": {
         "FZYanSJW": "res/font/FZYanSJW.TTF",
         "FZYanSJW_Cu": "res/font/FZYanSJW_Cu.TTF",

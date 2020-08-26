@@ -13,11 +13,7 @@ function getQueryVariable(v) {
 let art = getQueryVariable('art');
 let cdn = function () {
     const v = getQueryVariable('cdn');
-    if (v === 'false') {
-        return false;
-    } else {
-        return true;
-    }
+    return v !== 'false';
 }();
 
 if (cdn) {
@@ -56,7 +52,7 @@ if (art) {
                 load_page();
             });
         }
-    }, function (e) {
+    }, function () {
         window.location.href = "404.php";
     });
 }
@@ -71,9 +67,17 @@ function load_page() {
         }
     }();
 
+    let heading_count = 0;
     let renderer = {
         html(html) {
             return html.replace("src=\"", `src=\"${baseURL}`);
+        },
+        heading(text, level) {
+            heading_count ++;
+            if (level === 2 || level === 4)
+                all_heading.push({text, level, id: `title-anchor-${heading_count}`, pos: 0});
+            // return false;
+            return `<h${level} id="title-anchor-${heading_count}">${text}</h${level}>`;
         }
     };
 
@@ -81,6 +85,10 @@ function load_page() {
     document.getElementById("content").innerHTML = marked(blog_content, {
         baseUrl: baseURL
     });
+
+    update_heading_pos();
+    listen_document_height_change();
+    window.addEventListener('scroll', scroll_handler);
 
     if (blog_cover.length === 0) {
         document.getElementById("cover-img").style.display = "none";

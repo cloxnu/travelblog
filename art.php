@@ -34,6 +34,14 @@
 <?php include_once "template/homeButton.php"?>
 <?php include_once "template/darkmodeButton.php"?>
 <?php include_once "template/loading.php"?>
+<span id="nav-shelter" onclick="nav_clicked()"></span>
+<div id="nav-div">
+    <a id="nav-a" onclick="nav_clicked()">
+        <p id="nav-title"></p>
+        <img id="nav-img" src="<?php art("down_triangle")?>"/>
+    </a>
+</div>
+<div id="nav-list-div"></div>
 
 <div id="head" class="dark-mode-on">
     <img src="" id="cover-img"/>
@@ -56,5 +64,6 @@
 <script src="js/touch.js"></script>
 <script src="js/add_title_link.js"></script>
 <script src="js/loading_transition.js"></script>
+<script src="js/art_nav.js"></script>
 <script src="js/art.js"></script>
 </html>
