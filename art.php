@@ -36,8 +36,8 @@
 <?php include_once "template/loading.php"?>
 <span id="nav-shelter" onclick="nav_clicked()"></span>
 <div id="nav-div">
+    <p id="nav-title"></p>
     <a id="nav-a" onclick="nav_clicked()">
-        <p id="nav-title"></p>
         <img id="nav-img" src="<?php art("down_triangle")?>"/>
     </a>
 </div>

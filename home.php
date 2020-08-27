@@ -16,7 +16,6 @@
     <?php require_once "read/res.php";?>
     <style><?php require_once "css/font.css.php"?></style>
     <script src="read/res.js"></script>
-    <script src="js/vue.js"></script>
     <script src="js/darkmode.js"></script>
     <script src="js/loading.js"></script>
     <script src="js/read.js"></script>

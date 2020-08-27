@@ -37,7 +37,7 @@ function update_heading_pos() {
     for (let heading_item of all_heading) {
         heading_item.pos = document.getElementById(heading_item.id).offsetTop;
         document.getElementById(`nav-${heading_item.id}`).onclick = function () {
-            scroll_to('${heading_item.pos - 90}');
+            scroll_to(`${heading_item.pos - 90}`);
         }
         // heading_item.pos = document.getElementById(heading_item.id).getBoundingClientRect().top;
     }

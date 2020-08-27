@@ -8,13 +8,14 @@ body {
 
 div#nav-div {
     position: fixed;
+    display: inline-block;
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
     height: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
-    min-width: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
     color: var(--foreground-color);
     background-color: var(--background-color);
     border-radius: 26px;
@@ -37,7 +38,8 @@ a#nav-a {
 }
 
 p#nav-title {
-    margin: auto;
+    float: left;
+    min-width: 80px;
     font: bold 1em FZYanS;
     user-select: none;
     -webkit-user-select: none;
