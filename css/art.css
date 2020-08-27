@@ -29,6 +29,7 @@ a#nav-a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 26px;
     left: 0;
     top: 0;
     width: 100%;
@@ -200,6 +201,8 @@ img#cover-img {
             rgba(0, 0, 0, 0.79) 91.9%,
             rgba(0, 0, 0, 0.8) 100%
     );
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 #head-text {

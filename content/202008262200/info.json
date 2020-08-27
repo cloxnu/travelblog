@@ -1,0 +1,11 @@
+{
+    "id": "003",
+    "dir": "202008262200",
+    "class": "life",
+    "title": "The new page",
+    "cover": "res/img1.png",
+    "description": "The new page, the new life.",
+    "content": "content.md",
+    "creation_date": "2020/08/26 22:00",
+    "modification_date": "2020/08/26 22:00"
+}

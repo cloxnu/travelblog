@@ -87,6 +87,7 @@ function load_page() {
     });
 
     if (all_heading.length !== 0) {
+        document.getElementById("nav-list-div").innerHTML = generate_nav_html();
         update_heading_pos();
         listen_document_height_change();
         window.addEventListener('scroll', scroll_handler);
