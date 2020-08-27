@@ -1,0 +1,11 @@
+{
+    "id": "004",
+    "dir": "201808152200",
+    "class": "travel",
+    "title": "长江之行",
+    "cover": "res/img171.JPG",
+    "description": "重庆出发，一路长江之旅。",
+    "content": "content.md",
+    "creation_date": "2018/08/15 22:00",
+    "modification_date": "2018/08/15 22:00"
+}
