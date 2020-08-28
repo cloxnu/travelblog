@@ -27,6 +27,7 @@
     <link rel="stylesheet" type="text/css" href="css/cdnbutton.css"/>
     <link rel="stylesheet" type="text/css" href="css/art.css"/>
     <link rel="stylesheet" type="text/css" href="css/typography.css"/>
+    <link rel="stylesheet" type="text/css" href="css/cover.css"/>
 </head>
 <body class="loading touch">
 <script>document.body.classList.add(dark_mode_class_name);</script>
@@ -58,12 +59,17 @@
 <!--<hr>-->
 <div id="content"></div>
 <div id="end">END</div>
+<div id="associated-div" style="display: none">
+    <p id="associated-title">还想再看看？</p>
+    <div id="associated-blogs"></div>
+</div>
 
 </body>
 
 <script src="js/touch.js"></script>
 <script src="js/add_title_link.js"></script>
 <script src="js/loading_transition.js"></script>
+<script src="js/generate_blog_html.js"></script>
 <script src="js/art_nav.js"></script>
 <script src="js/art.js"></script>
 </html>

@@ -58,6 +58,7 @@
     /*left: 20%;*/
     /*right: 20%;*/
     text-align: center;
+    text-decoration: none;
     font: bold 3.5em FZYanS;
     color: white;
 }
@@ -124,6 +125,7 @@
     /*left: 20%;*/
     /*right: 20%;*/
     text-align: center;
+    text-decoration: none;
     font: normal 1em FZYanS;
     color: white;
 }
@@ -136,6 +138,7 @@
     max-width: 300px;
     top: 50px;
     text-align: center;
+    text-decoration: none;
     font: 400 0.9em Poppins;
     color: white;
 }
@@ -261,6 +264,7 @@
     position: relative;
     text-align: left;
     font: bold 2.5em FZYanS;
+    text-decoration: none;
     color: var(--foreground-color);
     transition: color 0.5s;
     -webkit-transition: color 0.5s;
@@ -296,6 +300,7 @@
     text-align: left;
     margin-top: 24px;
     font: normal 1em FZYanS;
+    text-decoration: none;
     color: var(--foreground-color);
     transition: color 0.5s;
     -webkit-transition: color 0.5s;
@@ -310,6 +315,7 @@
     max-width: 300px;
     text-align: left;
     font: 400 0.9em Poppins;
+    text-decoration: none;
     color: var(--foreground-color);
     transition: color 0.5s;
     -webkit-transition: color 0.5s;
@@ -329,6 +335,7 @@
 .cover-style-2 .cover-whole-link,
 .cover-style-3 .cover-whole-link {
     position: absolute;
+    text-decoration: none;
     width: 100%;
     height: 100%;
 }

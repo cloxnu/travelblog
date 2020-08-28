@@ -336,7 +336,6 @@ div#class-div {
 }
 
 .cover-title {
-    text-decoration: none;
     z-index: 12;
 }
 
@@ -345,16 +344,13 @@ div#class-div {
 }
 
 .cover-desc {
-    text-decoration: none;
     z-index: 12;
 }
 
 .cover-link {
-    text-decoration: none;
     z-index: 12;
 }
 
 .cover-whole-link {
-    text-decoration: none;
     z-index: 13;
 }

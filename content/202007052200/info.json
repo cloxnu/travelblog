@@ -6,5 +6,6 @@
     "description": "4D 魔幻城市",
     "content": "content.md",
     "creation_date": "2020/07/05 22:00",
-    "modification_date": "2020/07/05 22:00"
+    "modification_date": "2020/07/05 22:00",
+    "associated": ["201808152200"]
 }

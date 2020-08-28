@@ -34,6 +34,7 @@ if (cdn) {
 let blog_json;
 let blog_title;
 let blog_content;
+let blog_associated;
 let blog_cover;
 
 if (art) {
@@ -51,6 +52,12 @@ if (art) {
                 blog_content = content;
                 load_page();
             });
+        }
+        if (blog_json["associated"]) {
+            read_infos(blog_json["associated"], function (json) {
+                blog_associated = json;
+                load_associated();
+            })
         }
     }, function () {
         window.location.href = "404.php";
@@ -114,6 +121,11 @@ function load_page() {
     add_touch();
 
     load_once(load_item.content);
+}
+
+function load_associated() {
+    document.getElementById("associated-div").style.display = "block";
+    document.getElementById("associated-blogs").innerHTML = generate_blogs_html(blog_associated, "all");
 }
 
 

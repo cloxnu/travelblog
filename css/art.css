@@ -310,3 +310,11 @@ div#end::before {
 div#end::after {
     right: 20%;
 }
+
+p#associated-title {
+    width: 85%;
+    max-width: 800px;
+    font: bold 1.8em FZYanS;
+    margin: 40px auto 20px;
+    color: var(--foreground-color);
+}
