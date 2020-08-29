@@ -466,8 +466,6 @@
 
 ![长江索道](res/img183.jpg)
 
-![长江索道](res/img184.jpg)
-
 ![长江索道](res/img185.jpg)
 
 ![长江索道](res/img186.jpg)
