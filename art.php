@@ -53,7 +53,7 @@
     </div>
 </div>
 <div id="info">
-    <span id="creation-date"></span>
+    <span id="story-date"></span>
     <?php include_once "template/cdnbutton.php"?>
 </div>
 <!--<hr>-->

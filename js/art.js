@@ -115,7 +115,7 @@ function load_page() {
     document.getElementById("title").innerText = blog_title;
     document.getElementById("class").innerText = blog_json["class"];
 
-    document.getElementById("creation-date").innerText = blog_json["creation_date"];
+    document.getElementById("story-date").innerText = blog_json["story_date"];
 
     add_title_link();
     add_touch();

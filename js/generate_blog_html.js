@@ -8,12 +8,12 @@ function generate_blogs_html(all_blog_json, current_classification) {
         }
         const cover_path = ele["cover"].length === 0 ? "" : content(ele["dir"] + "/" + ele["cover"]);
         is_style2 = !is_style2;
-        all_blog_html += generate_blog_html(idx, is_style2 ? "cover-style-2" : "cover-style-3", cover_path, ele["creation_date"], ele["class"], ele["title"], ele["description"], `./?art=${ele["dir"]}`);
+        all_blog_html += generate_blog_html(idx, is_style2 ? "cover-style-2" : "cover-style-3", cover_path, ele["story_date"], ele["class"], ele["title"], ele["description"], `./?art=${ele["dir"]}`);
     });
     return all_blog_html;
 }
 
-function generate_blog_html(no, cover_style, cover, creation_date, classification, title, desc, link) {
+function generate_blog_html(no, cover_style, cover, story_date, classification, title, desc, link) {
     const cover_display = function () {
         if (cover.length === 0)
             return 'none';
@@ -40,7 +40,7 @@ function generate_blog_html(no, cover_style, cover, creation_date, classificatio
             <div id="blog-${no}-text" class="cover-text">
                 <span id="blog-${no}-class" class="cover-class" style="color: var(${classification_color})">${classification}</span>
                 <a id="blog-${no}-title" href="${link}" class="cover-title transition">${title}</a>
-                <span id="blog-${no}-date" class="cover-date">${creation_date}</span>
+                <span id="blog-${no}-date" class="cover-date">${story_date}</span>
                 <a id="blog-${no}-desc" href="${link}" class="cover-desc transition">${desc}</a>
                 <a id="blog-${no}-link" href="${link}" class="cover-link transition">EXPLORE
                     <img src="${home("arrow_right")}" id="blog-${no}-link-img" class="cover-link-img"/>

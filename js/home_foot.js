@@ -19,7 +19,7 @@ function load_top() {
     read_info(info.top, function (top_info) {
         const dir = content(top_info.dir) + "/";
         document.getElementById("top-cover").src = dir + top_info["cover"];
-        document.getElementById("top-date").innerText = top_info["creation_date"];
+        document.getElementById("top-date").innerText = top_info["story_date"];
         document.getElementById("top-class").innerText = top_info["class"];
         document.getElementById("top-title").innerText = top_info["title"];
         document.getElementById("top-title").href = `./?art=${top_info.dir}`;
