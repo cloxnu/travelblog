@@ -246,8 +246,8 @@ a#about-me-a::before {
     border-radius: inherit;
     box-shadow: 0 5px 15px var(--foreground-color);
     opacity: 0;
-    transition: opacity 0.5s;
-    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s, box-shadow 0.5s;
+    -webkit-transition: opacity 0.5s, box-shadow 0.5s;
 }
 
 @media (hover: hover) and (pointer: fine) {
