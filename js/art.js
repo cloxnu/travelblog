@@ -125,7 +125,7 @@ function load_page() {
 
 function load_associated() {
     document.getElementById("associated-div").style.display = "block";
-    document.getElementById("associated-blogs").innerHTML = generate_blogs_html(blog_associated, "all");
+    document.getElementById("associated-blogs").innerHTML = generate_blogs_html(blog_associated, "all", "cover-style-2");
 }
 
 
