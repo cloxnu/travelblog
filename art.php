@@ -28,6 +28,7 @@
     <link rel="stylesheet" type="text/css" href="css/art.css"/>
     <link rel="stylesheet" type="text/css" href="css/typography.css"/>
     <link rel="stylesheet" type="text/css" href="css/cover.css"/>
+    <link rel="stylesheet" type="text/css" href="css/foot.css"/>
 </head>
 <body class="loading touch">
 <script>document.body.classList.add(dark_mode_class_name);</script>
@@ -63,6 +64,7 @@
     <p id="associated-title">还想再看看？</p>
     <div id="associated-blogs"></div>
 </div>
+<?php include_once "template/foot.php"?>
 
 </body>
 

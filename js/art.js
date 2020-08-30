@@ -113,6 +113,7 @@ function load_page() {
     }
 
     document.getElementById("title").innerText = blog_title;
+    document.title = blog_title + " - 一只狗的火星旅行计划";
     document.getElementById("class").innerText = blog_json["class"];
 
     document.getElementById("story-date").innerText = blog_json["story_date"];

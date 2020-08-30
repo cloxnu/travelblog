@@ -25,6 +25,7 @@
     <link rel="stylesheet" type="text/css" href="css/button.css"/>
     <link rel="stylesheet" type="text/css" href="css/home.css"/>
     <link rel="stylesheet" type="text/css" href="css/cover.css"/>
+    <link rel="stylesheet" type="text/css" href="css/foot.css"/>
 </head>
 
 <body class="loading touch">
@@ -116,14 +117,18 @@
         <img src="<?php home("layout_button_fill");?>" class="active-img"/>
         <img src="<?php home("layout_button");?>" class="inactive-img"/>
         <img src="<?php home("grid");?>" class="foreground-img"/>
+        <span class="btn-shelter"></span>
     </a>
     <a id="layout-btn-list" class="img-button-link touch layout-btn" onclick="layout_btn_clicked('list')">
         <img src="<?php home("layout_button_fill");?>" class="active-img"/>
         <img src="<?php home("layout_button");?>" class="inactive-img"/>
         <img src="<?php home("list");?>" class="foreground-img"/>
+        <span class="btn-shelter"></span>
     </a>
 </div>
 <div id="blog-div" style="display: none"></div>
+
+<?php include_once "template/foot.php"?>
 
 </body>
 

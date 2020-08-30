@@ -4,6 +4,8 @@
     "home": {
         "travelDogIconHome": "res/home/travelDogIconHome.png",
         "travelDogIconHome_white": "res/home/travelDogIconHome_white.png",
+        "travelDog": "res/home/travelDog.svg",
+        "travelDog_white": "res/home/travelDog_white.svg",
         "downarrow": "res/home/downarrow.svg",
         "dog": "res/home/dog.svg",
         "sun": "res/home/sun.svg",
