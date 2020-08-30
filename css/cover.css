@@ -407,9 +407,10 @@
 .cover-style-3 .cover-hr {
     position: absolute;
     top: 0;
-    width: 50%;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 60%;
+    right: 5%;
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
     margin: auto;
     border: 1px solid var(--line-color);
     display: none;
