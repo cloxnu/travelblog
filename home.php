@@ -111,6 +111,18 @@
         <p class="western">INSPIRATION</p>
     </a>
 </div>
+<div id="layout-div">
+    <a id="layout-btn-grid" class="img-button-link touch layout-btn active" onclick="layout_btn_clicked('grid')">
+        <img src="<?php home("layout_button_fill");?>" class="active-img"/>
+        <img src="<?php home("layout_button");?>" class="inactive-img"/>
+        <img src="<?php home("grid");?>" class="foreground-img"/>
+    </a>
+    <a id="layout-btn-list" class="img-button-link touch layout-btn" onclick="layout_btn_clicked('list')">
+        <img src="<?php home("layout_button_fill");?>" class="active-img"/>
+        <img src="<?php home("layout_button");?>" class="inactive-img"/>
+        <img src="<?php home("list");?>" class="foreground-img"/>
+    </a>
+</div>
 <div id="blog-div" style="display: none"></div>
 
 </body>

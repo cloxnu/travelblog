@@ -12,6 +12,7 @@
     --white-shelter-opacity: 0.3;
     --dark-mode-icon-flip: 180deg;
     --foreground-brightness: 0%;
+    --background-brightness: 100%;
     --light-grey-brightness: 90%;
     --button-bgcolor: rgb(240, 240, 240);
     --button-highlight-bgcolor: rgb(220, 220, 220);
@@ -42,6 +43,7 @@
     --white-shelter-opacity: 0;
     --dark-mode-icon-flip: 0deg;
     --foreground-brightness: 100%;
+    --background-brightness: 12.5%;
     --light-grey-brightness: 10%;
     --button-bgcolor: rgb(40, 40, 40);
     --button-highlight-bgcolor: rgb(50, 50, 50);

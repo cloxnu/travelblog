@@ -32,7 +32,7 @@ function load_top() {
 }
 
 function load_blogs() {
-    document.getElementById("blog-div").innerHTML = generate_blogs_html(all_blog_json, current_classification);
+    document.getElementById("blog-div").innerHTML = generate_blogs_html(all_blog_json, current_classification, cover_style_items[current_layout]);
     document.getElementById("blog-div").style.display = "block";
 
     add_transition_animation();
@@ -47,6 +47,16 @@ const classification_items = {
 };
 let current_classification = classification_items.all;
 
+const layout_items = {
+    grid: "grid",
+    list: "list"
+};
+const cover_style_items = {
+    grid: "cover-style-2",
+    list: "cover-style-3"
+}
+let current_layout = layout_items.grid;
+
 function class_btn_clicked(name) {
     if (name === current_classification)
         return ;
@@ -57,6 +67,30 @@ function class_btn_clicked(name) {
     current_classification = name;
 
     load_blogs();
+}
+
+function layout_btn_clicked(name) {
+    if (name === current_layout)
+        return ;
+    for (let ele of document.getElementsByClassName("layout-btn")) {
+        ele.classList.remove("active");
+    }
+    document.getElementById(`layout-btn-${name}`).classList.add("active");
+    current_layout = name;
+
+    if (name === layout_items.grid) {
+        let eles = document.getElementsByClassName("cover-style-3");
+        Array.from(eles).forEach(function (ele) {
+            ele.classList.remove("cover-style-3");
+            ele.classList.add("cover-style-2");
+        });
+    } else {
+        let eles = document.getElementsByClassName("cover-style-2");
+        Array.from(eles).forEach(function (ele) {
+            ele.classList.remove("cover-style-2");
+            ele.classList.add("cover-style-3");
+        });
+    }
 }
 
 

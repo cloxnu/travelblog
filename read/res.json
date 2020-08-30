@@ -1,6 +1,6 @@
 {
-    "prefix": "https://cdn.jsdelivr.net/gh/cloxnu/travelblog@master/",
-    "prefix1": "",
+    "prefix1": "https://cdn.jsdelivr.net/gh/cloxnu/travelblog@master/",
+    "prefix": "",
     "home": {
         "travelDogIconHome": "res/home/travelDogIconHome.png",
         "travelDogIconHome_white": "res/home/travelDogIconHome_white.png",
@@ -14,7 +14,11 @@
         "planet2": "res/home/planet2.svg",
         "planet1_shadow": "res/home/planet1_shadow.svg",
         "planet2_shadow": "res/home/planet2_shadow.svg",
-        "arrow_right": "res/home/arrow_right.svg"
+        "arrow_right": "res/home/arrow_right.svg",
+        "layout_button_fill": "res/home/layout_button_fill.svg",
+        "layout_button": "res/home/layout_button.svg",
+        "grid": "res/home/grid.svg",
+        "list": "res/home/list.svg"
     },
     "art": {
         "down_triangle": "res/art/down_triangle.svg"
