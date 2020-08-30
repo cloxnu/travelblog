@@ -248,7 +248,7 @@
 .cover-style-2 .cover-date {
     position: relative;
     text-align: left;
-    margin-top: 6px;
+    margin-top: 3px;
     font: 600 0.8em Recursive;
     color: var(--grey);
 }
@@ -468,7 +468,7 @@
 .cover-style-3 .cover-date {
     position: relative;
     text-align: left;
-    margin-top: 6px;
+    margin-top: 3px;
     font: 600 0.8em Recursive;
     color: var(--grey);
 }
