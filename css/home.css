@@ -309,8 +309,8 @@ a#about-me-a::before {
 
 .img-button-link .foreground-img {
     position: absolute;
-    width: 64%;
-    height: 64%;
+    width: 56%;
+    height: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
