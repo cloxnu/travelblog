@@ -807,11 +807,11 @@
 ![青海湖](res/img372.JPG)
 
 <video controls>
-    <source src="res/img373.MOV">
+    <source src="res/img373.MOV" type="video/mp4">
 </video>
 
 <video controls>
-    <source src="res/img374.MOV">
+    <source src="res/img374.MOV" type="video/mp4">
 </video>
 
 ![青海湖](res/img375.JPG)
@@ -859,13 +859,13 @@
 ![青海湖](res/img394.JPG)
 
 <video controls>
-    <source src="res/img395.MOV">
+    <source src="res/img395.MOV" type="video/mp4">
 </video>
 
 ![青海湖](res/img396.JPG)
 
 <video controls>
-    <source src="res/img397.MOV">
+    <source src="res/img397.MOV" type="video/mp4">
 </video>
 
 ![青海湖](res/img398.JPG)
@@ -897,7 +897,7 @@
 ![青海湖](res/img410.JPG)
 
 <video controls>
-    <source src="res/img411.MOV">
+    <source src="res/img411.MOV" type="video/mp4">
 </video>
 
 ![青海湖](res/img412.JPG)
