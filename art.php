@@ -68,11 +68,11 @@
 
 </body>
 
-<?php include_once "template/firebase.php"?>
 <script src="js/touch.js"></script>
 <script src="js/add_title_link.js"></script>
 <script src="js/loading_transition.js"></script>
 <script src="js/generate_blog_html.js"></script>
 <script src="js/art_nav.js"></script>
 <script src="js/art.js"></script>
+<?php include_once "template/firebase.php"?>
 </html>
