@@ -11,5 +11,4 @@ function firebase_init() {
     };
     firebase.initializeApp(firebaseConfig);
     firebase.analytics();
-    console.log("called");
 }
