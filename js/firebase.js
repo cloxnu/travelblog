@@ -1,6 +1,4 @@
-
-
-<script>
+function firebase_init() {
     var firebaseConfig = {
         apiKey: "AIzaSyDRMQ-tfWZ1Ip_5NnSE9ekMcC_GyYG-S_4",
         authDomain: "travelblog-4b7fa.firebaseapp.com",
@@ -13,4 +11,4 @@
     };
     firebase.initializeApp(firebaseConfig);
     firebase.analytics();
-</script>
+}

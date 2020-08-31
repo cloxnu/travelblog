@@ -29,6 +29,10 @@
     <link rel="stylesheet" type="text/css" href="css/typography.css"/>
     <link rel="stylesheet" type="text/css" href="css/cover.css"/>
     <link rel="stylesheet" type="text/css" href="css/foot.css"/>
+
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+    <script src="js/firebase.js"></script>
 </head>
 <body class="loading touch">
 <script>document.body.classList.add(dark_mode_class_name);</script>
@@ -74,5 +78,4 @@
 <script src="js/generate_blog_html.js"></script>
 <script src="js/art_nav.js"></script>
 <script src="js/art.js"></script>
-<?php include_once "template/firebase.php"?>
 </html>

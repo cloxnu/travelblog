@@ -1,9 +1,11 @@
-function loaded() {
+function loaded(first_show=true) {
     document.body.classList.remove("loading");
     document.getElementById("loading-shelter").style.display = "none";
     window.setTimeout(function () {
         document.getElementById("loading-div").style.opacity = "0";
     }, 500);
+    if (first_show)
+        firebase_init();
 }
 
 function loading() {
@@ -19,6 +21,6 @@ window.onpageshow = function () {
     if (isFirstShow) {
         isFirstShow = false;
     } else {
-        loaded();
+        loaded(false);
     }
 }
