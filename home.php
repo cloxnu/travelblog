@@ -12,6 +12,8 @@
     <link rel="apple-touch-icon" sizes="144x144" href="res/home/favicon144.png">
 
     <title>Travel & Life - 一只狗的火星旅行计划</title>
+    <meta name="description" content="Sidney Liu (cloxnu) 's travel blog">
+    <meta name="keywords" content="Sidney Liu,cloxnu,travel,travel&life">
 
     <?php require_once "read/res.php";?>
     <style><?php require_once "css/font.css.php"?></style>
@@ -136,4 +138,5 @@
 <script src="js/home_foot.js"></script>
 <script src="js/loading_transition.js"></script>
 <script src="js/touch.js"></script>
+<?php include_once "template/firebase.php"?>
 </html>
