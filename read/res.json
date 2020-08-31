@@ -1,6 +1,6 @@
 {
-    "prefix1": "https://cdn.jsdelivr.net/gh/cloxnu/travelblog@master/",
-    "prefix": "",
+    "prefix": "https://cdn.jsdelivr.net/gh/cloxnu/travelblog@master/",
+    "prefix1": "",
     "home": {
         "travelDogIconHome": "res/home/travelDogIconHome.png",
         "travelDogIconHome_white": "res/home/travelDogIconHome_white.png",
