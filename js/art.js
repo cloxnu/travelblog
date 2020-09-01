@@ -135,7 +135,6 @@ function load_associated() {
 function load_handler() {
     if (window.location.hash)
         window.location.href = window.location.hash;
-    console.log(window.location.hash);
 }
 
 
