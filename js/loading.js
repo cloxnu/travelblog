@@ -1,4 +1,4 @@
-function loaded(first_show=true, handler={}) {
+function loaded(first_show=true, handler=function () {}) {
     document.body.classList.remove("loading");
     document.getElementById("loading-shelter").style.display = "none";
     window.setTimeout(function () {
