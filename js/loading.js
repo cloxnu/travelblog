@@ -1,8 +1,9 @@
-function loaded(first_show=true) {
+function loaded(first_show=true, handler={}) {
     document.body.classList.remove("loading");
     document.getElementById("loading-shelter").style.display = "none";
     window.setTimeout(function () {
         document.getElementById("loading-div").style.opacity = "0";
+        handler();
     }, 500);
     if (first_show)
         firebase_init();

@@ -132,6 +132,13 @@ function load_associated() {
 }
 
 
+function load_handler() {
+    if (window.location.hash)
+        window.location.href = window.location.hash;
+    console.log(window.location.hash);
+}
+
+
 let has_loaded = {
     content: false,
     page: false
@@ -144,7 +151,7 @@ function load_once (which) {
     has_loaded[which] = true;
 
     if (Object.values(has_loaded).every(Boolean))
-        loaded();
+        loaded(true, load_handler);
 }
 
 window.onload = function () {
