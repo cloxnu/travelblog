@@ -225,7 +225,7 @@ img#cover-img {
     /*left: 30px;*/
     /*right: 30px;*/
     margin-bottom: 6px;
-    font: 550 0.9em Poppins;
+    font: 580 0.9em Poppins;
     /*font: bold 0.9em Poppins;*/
     text-transform: uppercase;
     color: var(--foreground-color);
@@ -284,7 +284,7 @@ div#end {
     max-width: 800px;
     margin: 70px auto;
     text-align: center;
-    font: 550 0.9em Poppins;
+    font: 580 0.9em Poppins;
     color: var(--grey);
     text-transform: uppercase;
     transition: color 0.5s;

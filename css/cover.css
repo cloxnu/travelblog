@@ -100,7 +100,7 @@
     bottom: 12px;
     margin: 0 auto;
     text-align: center;
-    font: 550 0.9em Poppins;
+    font: 580 0.9em Poppins;
     text-transform: uppercase;
     color: white;
 }
@@ -139,7 +139,7 @@
     top: 50px;
     text-align: center;
     text-decoration: none;
-    font: 550 0.9em Poppins;
+    font: 580 0.9em Poppins;
     color: white;
 }
 
@@ -278,7 +278,7 @@
 .cover-style-2 .cover-class {
     position: relative;
     text-align: left;
-    font: 550 0.9em Poppins;
+    font: 580 0.9em Poppins;
     text-transform: uppercase;
     transition: color 0.5s;
     -webkit-transition: color 0.5s;
@@ -302,7 +302,7 @@
     margin-top: 24px;
     max-width: 300px;
     text-align: left;
-    font: 550 0.9em Poppins;
+    font: 580 0.9em Poppins;
     text-decoration: none;
     color: var(--foreground-color);
     transition: color 0.5s;
@@ -487,7 +487,7 @@
 .cover-style-3 .cover-class {
     position: relative;
     text-align: left;
-    font: 550 0.9em Poppins;
+    font: 580 0.9em Poppins;
     text-transform: uppercase;
     transition: color 0.5s;
     -webkit-transition: color 0.5s;
@@ -511,7 +511,7 @@
     margin-top: 24px;
     max-width: 300px;
     text-align: left;
-    font: 550 0.9em Poppins;
+    font: 580 0.9em Poppins;
     text-decoration: none;
     color: var(--foreground-color);
     transition: color 0.5s;
