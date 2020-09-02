@@ -26,13 +26,15 @@
         "down_triangle": "res/art/down_triangle.svg"
     },
     "font": {
-        "FZYanSJW": "res/font/FZYanSJW.TTF",
-        "FZYanSJW_Cu": "res/font/FZYanSJW_Cu.TTF",
+        "FZYanSJW": "res/font/FZYanSJW.woff2",
+        "FZYanSJW_Cu": "res/font/FZYanSJW_Cu.woff2",
         "Kano": "res/font/Kano.otf",
+        "Recursive": "res/font/Recursive.woff2",
         "Recursive-Light": "res/font/Recursive-Light.ttf",
         "Recursive-Regular": "res/font/Recursive-Regular.ttf",
         "Recursive-Bold": "res/font/Recursive-Bold.ttf",
         "Recursive-Black": "res/font/Recursive-Black.ttf",
+        "Poppins": "res/font/Poppins.ttf",
         "Poppins-Regular": "res/font/Poppins-Regular.ttf",
         "Poppins-SemiBold": "res/font/Poppins-SemiBold.ttf",
         "Poppins-Bold": "res/font/Poppins-Bold.ttf",

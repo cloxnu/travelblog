@@ -273,7 +273,7 @@ a#about-me-a::before {
 
 .button-link .western {
     margin: auto;
-    font: 400 12px Poppins;
+    font: 550 12px Poppins;
     user-select: none;
     -webkit-user-select: none;
 }

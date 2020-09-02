@@ -4,13 +4,14 @@
 
 @font-face {
     font-family: FZYanS;
-    src: url(<?php font("FZYanSJW")?>);
+    src: url(<?php font("FZYanSJW")?>) format('woff2');
     font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: FZYanS;
-    src: url(<?php font("FZYanSJW_Cu")?>);
+    src: url(<?php font("FZYanSJW_Cu")?>) format('woff2');
     font-weight: bold;
 }
 
@@ -21,51 +22,41 @@
 
 @font-face {
     font-family: Recursive;
-    src: url(<?php font("Recursive-Light")?>);
-    font-weight: 200;
-}
-
-@font-face {
-    font-family: Recursive;
-    src: url(<?php font("Recursive-Regular")?>);
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: Recursive;
-    src: url(<?php font("Recursive-Bold")?>);
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: Recursive;
-    src: url(<?php font("Recursive-Black")?>);
-    font-weight: 800;
+    src: url(<?php font("Recursive")?>) format('woff2');
+    font-style: oblique 0deg 15deg;
+    font-weight: 300 1000;
+    font-display: swap;
 }
 
 @font-face {
     font-family: Poppins;
-    src: url(<?php font("Poppins-Regular")?>);
-    font-weight: normal;
+    src: url(<?php font("Poppins")?>);
+    font-weight: 300 1000;
 }
 
-@font-face {
-    font-family: Poppins;
-    src: url(<?php font("Poppins-SemiBold")?>);
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: Poppins;
-    src: url(<?php font("Poppins-Bold")?>);
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: Poppins;
-    src: url(<?php font("Poppins-Black")?>);
-    font-weight: 800;
-}
+/*@font-face {*/
+/*    font-family: Poppins;*/
+/*    src: url(*/<?php //font("Poppins-Regular")?>/*);*/
+/*    font-weight: normal;*/
+/*}*/
+/**/
+/*@font-face {*/
+/*    font-family: Poppins;*/
+/*    src: url(*/<?php //font("Poppins-SemiBold")?>/*);*/
+/*    font-weight: 400;*/
+/*}*/
+/**/
+/*@font-face {*/
+/*    font-family: Poppins;*/
+/*    src: url(*/<?php //font("Poppins-Bold")?>/*);*/
+/*    font-weight: bold;*/
+/*}*/
+/**/
+/*@font-face {*/
+/*    font-family: Poppins;*/
+/*    src: url(*/<?php //font("Poppins-Black")?>/*);*/
+/*    font-weight: 800;*/
+/*}*/
 
 @font-face {
     font-family: "Fira Mono";
