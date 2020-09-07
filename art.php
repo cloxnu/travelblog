@@ -60,6 +60,10 @@
 <div id="info">
     <span id="story-date"></span>
     <?php include_once "template/cdnbutton.php"?>
+    <div id="image-num-div" onclick="change_image_num()">
+        <img id="image-num-img" src="<?php art("image");?>"/>
+        <span id="image-num"></span>
+    </div>
 </div>
 <!--<hr>-->
 <div id="content"></div>
@@ -72,6 +76,7 @@
 
 </body>
 
+<script src="js/image_num.js"></script>
 <script src="js/add_title_link.js"></script>
 <script src="js/art_nav.js"></script>
 <script src="js/art.js"></script>

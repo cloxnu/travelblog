@@ -32,6 +32,11 @@
     font-size: 1.1em;
     line-height: 200%;
     margin: 16px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
 }
 
 #content h1,
@@ -119,10 +124,35 @@
 }
 
 #content img {
-    margin: 0px auto;
+    margin: 10px auto;
     width: 100%;
     object-fit: contain;
     object-position: center;
+    transition: width 0.5s, margin 0.5s;
+    -webkit-transition: width 0.5s, margin 0.5s;
+}
+
+#content.thumbnail4 img {
+    cursor: pointer;
+    margin: 1%;
+    width: 23%;
+    object-fit: contain;
+    object-position: center;
+}
+
+#content.thumbnail2 img {
+    cursor: pointer;
+    margin: 1%;
+    width: 48%;
+    object-fit: contain;
+    object-position: center;
+}
+
+#content.thumbnail4 img.checked,
+#content.thumbnail2 img.checked {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
 }
 
 #content video {

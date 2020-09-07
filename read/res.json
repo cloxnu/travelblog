@@ -1,5 +1,5 @@
 {
-    "prefix": "https://cdn.jsdelivr.net/gh/cloxnu/travelblog@master/",
+    "prefix": "https://cdn.jsdelivr.net/gh/cloxnu/travelblog@latest/",
     "prefix1": "",
     "home": {
         "travelDogIconHome": "res/home/travelDogIconHome.png",
@@ -23,7 +23,8 @@
         "list": "res/home/list.svg"
     },
     "art": {
-        "down_triangle": "res/art/down_triangle.svg"
+        "down_triangle": "res/art/down_triangle.svg",
+        "image": "res/art/image.svg"
     },
     "font": {
         "FZYanSJW": "res/font/FZYanSJW.woff2",

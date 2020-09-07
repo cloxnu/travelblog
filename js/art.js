@@ -93,6 +93,20 @@ function load_page() {
         baseUrl: baseURL
     });
 
+    // thumbnail image onclick
+    let all_img = document.querySelectorAll("#content img");
+    all_img.forEach(function (img) {
+        img.onclick = function () {
+            if (document.getElementById("content").classList.contains("thumbnail")) {
+                for (let ele of document.getElementsByClassName("checked")) {
+                    if (ele !== this)
+                        ele.classList.remove("checked");
+                }
+                this.classList.toggle("checked");
+            }
+        }
+    })
+
     if (all_heading.length !== 0) {
         document.getElementById("nav-list-div").innerHTML = generate_nav_html();
         update_heading_pos();

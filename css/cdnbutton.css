@@ -1,11 +1,9 @@
 a#cdn-a {
-    position: absolute;
-    top: 50%;
+    position: relative;
     left: 0;
     /*width: 60px;*/
     /*height: 30px;*/
     padding: 5px 8px;
-    transform: translateY(-50%);
     border-radius: 20px;
     text-decoration: none;
     /*background-color: rgba(0, 0, 0, 0.5);*/
