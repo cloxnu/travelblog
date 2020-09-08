@@ -5,12 +5,16 @@ read_info("",function (json) {
     info = json;
     load_top();
     load_once(load_item.top);
+}, function (e) {
+    console.error(`content info read failed: ${e}.`);
 })
 
 read_all(function (json) {
     all_blog_json = json;
     load_blogs();
     load_once(load_item.blogs);
+}, function (e) {
+    console.error(`content read failed: ${e}.`);
 })
 
 function load_top() {
@@ -28,6 +32,8 @@ function load_top() {
         document.getElementById("top-link").href = `./?art=${top_info.dir}`;
 
         document.getElementById("top-div").style.display = "block";
+    }, function (e) {
+        console.error(`top info read failed: ${e}.`);
     })
 }
 

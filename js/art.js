@@ -46,20 +46,27 @@ if (art) {
             request(content(art + "/" + blog_json["content"]), function (content) {
                 blog_content = content;
                 load_page();
+            }, function (e) {
+                console.error(`${art} read failed with cdn turn on: ${e}.`);
             });
         } else {
             read(art + "/" + blog_json["content"], function (content) {
                 blog_content = content;
                 load_page();
+            }, function (e) {
+                console.error(`${art} read failed with cdn turn off: ${e}.`);
             });
         }
         if (blog_json["associated"]) {
             read_infos(blog_json["associated"], function (json) {
                 blog_associated = json;
                 load_associated();
-            })
+            }, function (e) {
+                console.error(`associated art read failed: ${e}.`);
+            });
         }
-    }, function () {
+    }, function (e) {
+        console.error(`${art} has not found: ${e}.`);
         window.location.href = "404.php";
     });
 }
