@@ -6,6 +6,12 @@ div#foot-img {
     margin-bottom: -5px;
 }
 
+#wave-svg {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
 .foot-wave0 {
     fill: var(--foot-wave0);
 }
