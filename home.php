@@ -139,7 +139,7 @@
 </body>
 
 <script src="js/generate_blog_html.js"></script>
-<script src="js/home_foot.js"></script>
 <script src="js/loading_transition.js"></script>
+<script src="js/home_foot.js"></script>
 <script src="js/touch.js"></script>
 </html>
