@@ -14,19 +14,37 @@ div#foot-img {
 
 .foot-wave0 {
     fill: var(--foot-wave0);
+    animation: wave-animation 2s ease-in-out infinite;
+    -webkit-animation: wave-animation 2s ease-in-out infinite;
 }
 
 .foot-wave1 {
     fill: var(--foot-wave1);
+    animation: wave-animation 2s 0.3s ease-in-out infinite;
+    -webkit-animation: wave-animation 2s 0.3s ease-in-out infinite;
 }
 
 .foot-wave2 {
     fill: var(--foot-wave2);
+    animation: wave-animation 2s 0.6s ease-in-out infinite;
+    -webkit-animation: wave-animation 2s 0.6s ease-in-out infinite;
 }
 
 .foot-wave0, .foot-wave1, .foot-wave2 {
     transition: fill 0.5s;
     -webkit-transition: fill 0.5s;
+}
+
+@keyframes wave-animation {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(30px); }
+    100% { transform: translateY(0px); }
+}
+
+@-webkit-keyframes wave-animation {
+    0% { -webkit-transform: translateY(0px); }
+    50% { -webkit-transform: translateY(30px); }
+    100% { -webkit-transform: translateY(0px); }
 }
 
 div#foot {
