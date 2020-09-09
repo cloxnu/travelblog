@@ -1,3 +1,28 @@
+div#foot-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    margin-bottom: -5px;
+}
+
+.foot-wave0 {
+    fill: var(--foot-wave0);
+}
+
+.foot-wave1 {
+    fill: var(--foot-wave1);
+}
+
+.foot-wave2 {
+    fill: var(--foot-wave2);
+}
+
+.foot-wave0, .foot-wave1, .foot-wave2 {
+    transition: fill 0.5s;
+    -webkit-transition: fill 0.5s;
+}
+
 div#foot {
     position: relative;
     display: flex;

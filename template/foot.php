@@ -1,3 +1,6 @@
+<div id="foot-img">
+    <?php include_once 'template/svg/wave.svg.php';?>
+</div>
 <div id="foot">
     <div id="foot-logo-div">
         <img id="foot-logo" src="<?php home('travelDog');?>"/>

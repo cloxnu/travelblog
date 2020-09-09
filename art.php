@@ -77,10 +77,10 @@
 </body>
 
 <script src="js/image_num.js"></script>
-<script src="js/add_title_link.js"></script>
-<script src="js/art_nav.js"></script>
-<script src="js/art.js"></script>
 <script src="js/loading_transition.js"></script>
 <script src="js/generate_blog_html.js"></script>
 <script src="js/touch.js"></script>
+<script src="js/add_title_link.js"></script>
+<script src="js/art_nav.js"></script>
+<script src="js/art.js"></script>
 </html>
