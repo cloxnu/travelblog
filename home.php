@@ -24,7 +24,6 @@
     <script src="js/home.js"></script>
     <link rel="stylesheet" type="text/css" href="css/darkmode.css"/>
     <link rel="stylesheet" type="text/css" href="css/loading.css"/>
-    <link rel="stylesheet" type="text/css" href="css/button.css"/>
     <link rel="stylesheet" type="text/css" href="css/home.css"/>
     <link rel="stylesheet" type="text/css" href="css/cover.css"/>
     <link rel="stylesheet" type="text/css" href="css/foot.css"/>
