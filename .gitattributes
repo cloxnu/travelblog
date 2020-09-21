@@ -1,2 +1,3 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+content/20200912/res/img73.MOV filter=lfs diff=lfs merge=lfs -text
