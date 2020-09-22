@@ -325,7 +325,7 @@
 ![轻轨](res/img156.jpg)
 
 <video controls>
-    <source src="res/img158.mp4" type="video/mp4">
+    <source src="res/img158.mp4" class="-cdn" type="video/mp4">
 </video>
 
 #### 人民大礼堂

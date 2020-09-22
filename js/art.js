@@ -73,17 +73,23 @@ if (art) {
 
 
 function load_page() {
+    const with_cdn = content(art) + "/";
+    const without_cdn = "content/" + art + "/";
+
     const baseURL = function () {
         if (cdn) {
-            return content(art) + "/";
+            return with_cdn;
         } else {
-            return "content/" + art + "/";
+            return without_cdn;
         }
     }();
 
     let heading_count = 0;
     let renderer = {
         html(html) {
+            if (html.includes("-cdn")) {
+                return html.replace("src=\"", `src=\"${without_cdn}`);
+            }
             return html.replace("src=\"", `src=\"${baseURL}`);
         },
         heading(text, level) {
