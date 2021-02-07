@@ -82,7 +82,7 @@
         </p>
     </div>
 
-    <a id="about-me-a" class="button-link touch" href="https://github.com/cloxnu">
+    <a id="about-me-a" class="button-link touch" href="https://clox.nu">
         <p class="western">ABOUT ME</p>
     </a>
 </div>
