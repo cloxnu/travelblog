@@ -22,6 +22,8 @@
     <script src="js/loading.js"></script>
     <script src="js/read.js"></script>
     <script src="js/home.js"></script>
+    <link rel="preload" href="<?php font("FZYanSJW")?>" as="font">
+    <link rel="preload" href="<?php font("FZYanSJW_Cu")?>" as="font">
     <link rel="stylesheet" type="text/css" href="css/darkmode.css"/>
     <link rel="stylesheet" type="text/css" href="css/loading.css"/>
     <link rel="stylesheet" type="text/css" href="css/home.css"/>
